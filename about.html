@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberty Plumbing | About Us</title>
-    <meta name="description" content="Learn about Liberty Plumbing, a family-owned luxury plumbing service focused on transparency, cleanliness, and expert craftsmanship.">
+    <title>Liberty Plumbing | Houston Emergency Plumbing & Local Experts</title>
+    <meta name="description" content="Liberty Plumbing is Houston's trusted local plumber for 24/7 emergency service, residential repiping, leak detection, and water heater repair.">
+    <meta name="keywords" content="Houston emergency plumbing, local plumber Katy TX, residential repiping Houston, Sugar Land water heater repair, 24/7 plumber near me, leak detection experts, plumbing contractors Texas">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
+    <link rel="canonical" href="https://liberty-plumbing-example.com/about.html">
 </head>
 <body>
-    <div class="video-container">
-        <!-- Using a placeholder video URL. Replace with your actual plumbing video. -->
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="assets/plumbing-1.mp4" type="video/mp4">
-        </video>
+    <div class="bg-container">
+        <img src="assets/plumbing-3.png" alt="Luxury Rainfall Shower" id="bg-image">
         <div class="overlay"></div>
     </div>
 
@@ -30,28 +29,31 @@
         </button>
         <ul class="nav-links">
             <li><a href="index.html">Overview</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html" class="active">About</a></li>
-            <li><a href="tel:5550198" class="nav-cta">Call Now</a></li>
+            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
         </ul>
     </nav>
 
     <main class="main-content">
         <section class="overview-section" style="padding-top: 5vh;">
             <div class="title-wrapper">
-                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Raising the Bar on<br><span class="hero-accent">Plumbing.</span></span></h1>
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Houston's Premier<br><span class="hero-accent">Plumbing Experts.</span></span></h1>
             </div>
             
             <div class="grid-container" style="max-width: 1000px;">
                 <div class="glass-card" style="text-align: left;">
-                    <h2 style="color:var(--primary); font-size: 2rem; margin-bottom: 1rem;">Our Mission</h2>
-                    <p style="color:#e4e4e7; font-size: 1.1rem; margin-bottom: 1.5rem;">We started Liberty Plumbing because we were tired of the industry standard: late arrivals, muddy boots, and surprise bills. We believe that inviting a contractor into your home requires trust, and we honor that trust by delivering a premium, white-glove experience on every call.</p>
-                    <p style="color:#e4e4e7; font-size: 1.1rem;">Every technician is fully licensed, background-checked, and rigorously trained—not just in advanced plumbing diagnostics, but in customer service and home respect.</p>
+                    <h2 style="color:var(--primary); font-size: 2rem; margin-bottom: 1rem;">The Liberty Standard</h2>
+                    <p style="color:#e4e4e7; font-size: 1.1rem; margin-bottom: 1.5rem;">As a premier <strong>Houston emergency plumbing company</strong>, we started Liberty Plumbing because we were tired of the industry standard: late arrivals, muddy boots, and surprise bills. Whether you need urgent leak detection in Katy or a total residential repiping in Sugar Land, we believe that inviting a contractor into your home requires trust.</p>
+                    <p style="color:#e4e4e7; font-size: 1.1rem; margin-bottom: 1.5rem;">Every plumber on our team is fully licensed, background-checked, and rigorously trained in advanced plumbing diagnostics. From installing high-efficiency tankless water heaters to clearing stubborn main sewer line clogs, we execute every job with precision and respect for your property.</p>
+                    <div style="margin-top: 2rem;">
+                        <button class="cta-button contact-btn" data-service="other">Contact Our Team</button>
+                    </div>
                 </div>
             </div>
 
             <div class="title-wrapper" style="margin-top: 5rem;">
-                <h2 class="section-title"><span class="line-halo">Service Area</span></h2>
+                <h2 class="section-title"><span class="line-halo">Local Service Area</span></h2>
             </div>
             
             <div class="glass-card" style="max-width: 1000px; margin: 0 auto; padding: 0; overflow: hidden;">
@@ -66,7 +68,7 @@
                     title="Liberty Plumbing Service Area - Houston TX">
                 </iframe>
                 <div style="padding: 2rem; text-align: center;">
-                    <p style="color:#e4e4e7; font-size: 1.1rem;">Proudly serving the Greater Houston Area including Katy, Sugar Land, Richmond, and The Woodlands.</p>
+                    <p style="color:#e4e4e7; font-size: 1.1rem;">Proudly providing 5-star plumbing services across the Greater Houston Area including Katy, Sugar Land, Richmond, and The Woodlands.</p>
                 </div>
             </div>
         </section>
@@ -78,6 +80,30 @@
             <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
+            <p style="text-align: center; color: #e4e4e7; margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--accent); font-weight: bold;">(555) 019-8123</a>.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address">
+                <select id="modal-service" required>
+                    <option value="" disabled selected>Select Service Needed</option>
+                    <option value="emergency">Emergency Repair</option>
+                    <option value="repiping">Whole-Home Repiping</option>
+                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="drain">Drain Cleaning</option>
+                    <option value="other">Other / General Inquiry</option>
+                </select>
+                <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

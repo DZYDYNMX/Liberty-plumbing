@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty Plumbing | Our Services</title>
+    <meta name="description" content="View our premium plumbing services including emergency repair, whole-home repiping, water heater installation, and drain cleaning.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
+    <link rel="canonical" href="https://liberty-plumbing-example.com/services.html">
+</head>
+<body>
+    <div class="bg-container">
+        <img src="assets/plumbing-2.png" alt="Copper pipes" id="bg-image">
+        <div class="overlay"></div>
+    </div>
+
+    <div class="mask-top"></div>
+    <div class="mask-bottom"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="overview-section" style="padding-top: 5vh;">
+            <div class="title-wrapper">
+                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Expert Solutions for<br><span class="hero-accent">Every System.</span></span></h1>
+                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">From minor leaks to total residential repiping.</span></p>
+            </div>
+            
+            <div class="grid-container">
+                <div class="glass-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <h2 style="color:var(--primary); font-size:1.75rem; margin-bottom:0.5rem;">Emergency Plumbing</h2>
+                    <h3 style="color:var(--accent); font-size:1.25rem; margin-bottom:1rem;">Available 24/7</h3>
+                    <p style="color:#ffffff; margin-bottom: 1.5rem; flex-grow: 1;">Burst pipes, severely clogged mains, and overflowing toilets. When water is actively damaging your home, we dispatch our emergency response team immediately to shut off the source and repair the damage.</p>
+                    <button class="cta-button contact-btn" data-service="emergency" style="width: 100%;">Request Emergency Help</button>
+                </div>
+
+                <div class="glass-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <h2 style="color:var(--primary); font-size:1.75rem; margin-bottom:0.5rem;">Whole-Home Repiping</h2>
+                    <h3 style="color:var(--accent); font-size:1.25rem; margin-bottom:1rem;">Copper & PEX Experts</h3>
+                    <p style="color:#ffffff; margin-bottom: 1.5rem; flex-grow: 1;">Living with low water pressure, rusty water, or frequent leaks? We specialize in turnkey residential repiping. We meticulously plan the route, minimize drywall intrusion, and upgrade your home to modern, durable materials.</p>
+                    <button class="cta-button contact-btn" data-service="repiping" style="width: 100%;">Get a Repiping Quote</button>
+                </div>
+
+                <div class="glass-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <h2 style="color:var(--primary); font-size:1.75rem; margin-bottom:0.5rem;">Water Heaters</h2>
+                    <h3 style="color:var(--accent); font-size:1.25rem; margin-bottom:1rem;">Tank & Tankless</h3>
+                    <p style="color:#ffffff; margin-bottom: 1.5rem; flex-grow: 1;">Never run out of hot water again. We repair existing units and offer premium installations for high-efficiency tankless water heaters (like Rinnai and Navien) for endless hot water on demand.</p>
+                    <button class="cta-button contact-btn" data-service="water_heater" style="width: 100%;">Schedule Service</button>
+                </div>
+
+                <div class="glass-card" style="text-align: left; display: flex; flex-direction: column;">
+                    <h2 style="color:var(--primary); font-size:1.75rem; margin-bottom:0.5rem;">Drain & Sewer Cleaning</h2>
+                    <h3 style="color:var(--accent); font-size:1.25rem; margin-bottom:1rem;">Hydro-Jetting Available</h3>
+                    <p style="color:#ffffff; margin-bottom: 1.5rem; flex-grow: 1;">Slow drains or sewage backups? We use advanced camera inspections to find the blockage, then clear it completely using heavy-duty snaking or high-pressure hydro-jetting to make your pipes flow like new.</p>
+                    <button class="cta-button contact-btn" data-service="drain" style="width: 100%;">Book Drain Cleaning</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
+            <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
+            <p style="text-align: center; color: #e4e4e7; margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--accent); font-weight: bold;">(555) 019-8123</a>.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address">
+                <select id="modal-service" required>
+                    <option value="" disabled selected>Select Service Needed</option>
+                    <option value="emergency">Emergency Repair</option>
+                    <option value="repiping">Whole-Home Repiping</option>
+                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="drain">Drain Cleaning</option>
+                    <option value="other">Other / General Inquiry</option>
+                </select>
+                <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

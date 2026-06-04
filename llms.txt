@@ -4,5 +4,5 @@ Liberty Plumbing is a premium residential and emergency plumbing service based i
 
 ## Pages
 - [Overview](https://liberty-plumbing-example.com/index.html)
-- [Reviews](https://liberty-plumbing-example.com/reviews.html)
+- [Services](https://liberty-plumbing-example.com/services.html)
 - [About](https://liberty-plumbing-example.com/about.html)

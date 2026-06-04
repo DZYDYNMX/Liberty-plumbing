@@ -1,17 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ── Video Autoplay Kickstarter ─────────────────────────────
-    const bgVideos = document.querySelectorAll('video');
-    bgVideos.forEach(video => {
-        video.muted = true;
-        const playPromise = video.play();
-        if (playPromise !== undefined) {
-            playPromise.catch(() => {
-                document.body.addEventListener('touchstart', () => { video.play(); }, { once: true });
-                document.body.addEventListener('click', () => { video.play(); }, { once: true });
-            });
-        }
-    });
-
     // ── Hamburger ──────────────────────────────────────────────
     const hamburger = document.querySelector('.hamburger');
     const navLinks  = document.querySelector('.nav-links');
@@ -25,16 +12,51 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ── SPA Navigation Intercept ───────────────────────────────
+    // ── Global Click Event Delegation (SPA & Modals) ───────────
     document.body.addEventListener('click', async e => {
+        // Modals
+        const contactModal = document.getElementById('contact-modal');
+        
+        if (e.target.classList.contains('modal-overlay')) {
+            e.target.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+        const closeBtn = e.target.closest('.modal-close');
+        if (closeBtn) {
+            const modal = closeBtn.closest('.modal-overlay');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
+        }
+
+        // Contact Button Intercept
+        const contactBtn = e.target.closest('.contact-btn');
+        if (contactBtn && contactModal) {
+            e.preventDefault();
+            contactModal.classList.add('active');
+            document.body.classList.add('no-scroll');
+            
+            const svc = contactBtn.getAttribute('data-service');
+            if (svc) {
+                const sel = document.getElementById('modal-service');
+                if (sel) sel.value = svc;
+            }
+            return;
+        }
+
+        // SPA Navigation Intercept
         const link = e.target.closest('a');
         if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
         
         const url = new URL(link.href, window.location.href);
         if (url.origin !== window.location.origin) return;
         if (url.pathname === window.location.pathname && url.hash) return;
-        if (url.pathname.endsWith('.pdf') || url.pathname.endsWith('.mp4')) return;
+        if (url.pathname.endsWith('.pdf') || url.pathname.endsWith('.mp4') || url.pathname.endsWith('.png')) return;
         
+        // Don't intercept tel: links
+        if (url.protocol === 'tel:') return;
+
         e.preventDefault();
 
         // Close mobile nav if open
@@ -69,18 +91,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentMain.className = newMain.className;
             }
 
-            // Swap background video if it has changed
-            const newVideoSrc = doc.querySelector('#bg-video source')?.getAttribute('src');
-            const currentVideo = document.getElementById('bg-video');
-            if (newVideoSrc && currentVideo) {
-                const currentSource = currentVideo.querySelector('source');
-                if (currentSource && currentSource.getAttribute('src') !== newVideoSrc) {
-                    currentSource.setAttribute('src', newVideoSrc);
-                    currentVideo.load();
-                    const playPromise = currentVideo.play();
-                    if (playPromise !== undefined) {
-                        playPromise.catch(e => console.log('Video autoplay interrupted:', e));
-                    }
+            // Swap modals dynamically
+            document.querySelectorAll('.modal-overlay').forEach(m => m.remove());
+            doc.querySelectorAll('.modal-overlay').forEach(m => document.body.appendChild(m));
+
+            // Swap background image if it has changed
+            const newImgSrc = doc.querySelector('#bg-image')?.getAttribute('src');
+            const currentImg = document.getElementById('bg-image');
+            if (newImgSrc && currentImg) {
+                if (currentImg.getAttribute('src') !== newImgSrc) {
+                    currentImg.setAttribute('src', newImgSrc);
                 }
             }
 

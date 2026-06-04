@@ -48,9 +48,9 @@ a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
 }
 
 /* ===========================================================
-   BACKGROUND VIDEO
+   BACKGROUND IMAGE (KEN BURNS)
    =========================================================== */
-.video-container {
+.bg-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -61,11 +61,16 @@ a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
     overflow: hidden;
     background: #000;
 }
-.video-container video {
+.bg-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6; /* Dim the video slightly */
+    opacity: 0.5; /* Dim the image */
+    animation: kenBurns 20s ease-in-out infinite alternate;
+}
+@keyframes kenBurns {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
 }
 .overlay {
     position: absolute;
@@ -268,6 +273,56 @@ footer {
 }
 .footer-content { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; align-items: center; }
 .footer-copy { color: #fff; font-size: 0.9rem; line-height: 1.7; }
+
+/* ===========================================================
+   MODAL
+   =========================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; pointer-events: none;
+    transition: all 0.3s ease;
+}
+.modal-overlay.active { opacity: 1; pointer-events: auto; }
+.modal-content {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 3rem;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.modal-overlay.active .modal-content { transform: translateY(0); }
+.modal-close {
+    position: absolute;
+    top: 1rem; right: 1.5rem;
+    background: none; border: none;
+    color: #fff; font-size: 2rem;
+    cursor: pointer;
+}
+.contact-form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1.5rem; }
+.contact-form input, .contact-form select, .contact-form textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 1rem;
+}
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+    outline: 2px solid var(--primary);
+    border-color: transparent;
+}
+.contact-form button { margin-top: 1rem; }
 
 /* ===========================================================
    MOBILE RESPONSIVENESS

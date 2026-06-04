@@ -10,13 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
+    <link rel="canonical" href="https://liberty-plumbing-example.com/">
 </head>
 <body>
-    <div class="video-container">
-        <!-- Using a placeholder video URL. Replace with your actual plumbing video. -->
-        <video autoplay muted loop playsinline id="bg-video">
-            <source src="assets/plumbing-1.mp4" type="video/mp4">
-        </video>
+    <div class="bg-container">
+        <img src="assets/plumbing-1.png" alt="Luxury Bathroom Sink" id="bg-image">
         <div class="overlay"></div>
     </div>
 
@@ -30,9 +28,9 @@
         </button>
         <ul class="nav-links">
             <li><a href="index.html" class="active">Overview</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="tel:5550198" class="nav-cta">Call Now</a></li>
+            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
         </ul>
     </nav>
 
@@ -42,19 +40,47 @@
                 <h1 class="hero-title"><span class="line-halo">Flow Restored.<br>Stress <span class="hero-accent">Relieved.</span></span></h1>
                 <p class="hero-sub"><span class="line-halo">Premium residential plumbing, 24/7 emergency response, and expert repiping delivered with white-glove service.</span></p>
                 <div class="hero-actions">
-                    <a href="tel:5550198" class="cta-button">Request Emergency Service</a>
-                    <a href="reviews.html" class="cta-button outline">See Our Work</a>
+                    <button class="cta-button contact-btn" data-service="emergency">Request Emergency Service</button>
+                    <a href="services.html" class="cta-button outline">View Our Services</a>
                 </div>
             </div>
         </section>
 
+        <!-- Our Services Preview -->
+        <section class="overview-section" style="padding-top: 2rem;">
+            <div class="title-wrapper">
+                <h2 class="section-title"><span class="line-halo">Comprehensive Plumbing Solutions</span></h2>
+            </div>
+            <div class="grid-container">
+                <div class="glass-card" style="text-align: left;">
+                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Emergency Repairs</h3>
+                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Burst pipes, overflowing toilets, and major leaks handled immediately, 24/7.</p>
+                    <button class="cta-button outline contact-btn" data-service="emergency" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Help Now</button>
+                </div>
+                <div class="glass-card" style="text-align: left;">
+                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Whole-Home Repiping</h3>
+                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Replace old galvanized or polybutylene pipes with modern, durable PEX or copper.</p>
+                    <button class="cta-button outline contact-btn" data-service="repiping" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Request Quote</button>
+                </div>
+                <div class="glass-card" style="text-align: left;">
+                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Water Heaters</h3>
+                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Installation and repair of traditional tank and modern tankless water heating systems.</p>
+                    <button class="cta-button outline contact-btn" data-service="water_heater" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Schedule Service</button>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="services.html" class="cta-button">See All Services</a>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
         <section class="overview-section">
             <div class="title-wrapper">
                 <h2 class="section-title"><span class="line-halo">Why Choose Liberty?</span></h2>
             </div>
             <div class="grid-container">
                 <div class="glass-card">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">24/7 Emergency</h3>
+                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">24/7 Availability</h3>
                     <p style="color:#e4e4e7;">Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock to secure your home.</p>
                 </div>
                 <div class="glass-card">
@@ -67,6 +93,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials (Moved from Reviews page) -->
+        <section class="overview-section">
+            <div class="title-wrapper">
+                <h2 class="section-title"><span class="line-halo">What Our Clients Say</span></h2>
+            </div>
+            <div class="grid-container">
+                <div class="glass-card review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Woke up to a flooded basement at 3 AM. The Liberty team arrived within 45 minutes, found the burst pipe, and had the water shut off and repaired before sunrise. Absolute lifesavers."</p>
+                    <span class="reviewer">— Michael T.</span>
+                </div>
+                <div class="glass-card review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Extremely professional. They installed a tankless water heater for us. The crew wore boot covers, put down mats everywhere, and left the utility room cleaner than they found it."</p>
+                    <span class="reviewer">— Sarah L.</span>
+                </div>
+                <div class="glass-card review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Upfront pricing is real. The quote they gave me for clearing our main sewer line was exactly what I paid. No upsells or pressure tactics. Highly recommend."</p>
+                    <span class="reviewer">— David K.</span>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -75,6 +125,30 @@
             <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contact-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
+            <p style="text-align: center; color: #e4e4e7; margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--accent); font-weight: bold;">(555) 019-8123</a>.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address">
+                <select id="modal-service" required>
+                    <option value="" disabled selected>Select Service Needed</option>
+                    <option value="emergency">Emergency Repair</option>
+                    <option value="repiping">Whole-Home Repiping</option>
+                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="drain">Drain Cleaning</option>
+                    <option value="other">Other / General Inquiry</option>
+                </select>
+                <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
+                <button type="submit" class="cta-button">Submit Request</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
