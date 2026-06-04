@@ -1,0 +1,297 @@
+/* ===========================================================
+   BASE & RESET
+   =========================================================== */
+:root {
+    --bg-color: #09090b; /* Very dark background */
+    --text-main: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --primary: #0ea5e9; /* Sky blue / Water */
+    --primary-hover: #0284c7;
+    --accent: #38bdf8;
+    --glass-bg: rgba(18, 18, 20, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* No-scroll lock for modals */
+body.no-scroll { overflow: hidden; }
+
+/* Typography */
+h1, h2, h3, h4 { font-weight: 800; line-height: 1.1; }
+a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
+
+/* Line Halo (text wrap trick) */
+.line-halo {
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: inline;
+    line-height: 1.4;
+}
+
+/* ===========================================================
+   BACKGROUND VIDEO
+   =========================================================== */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100svh;
+    z-index: -2;
+    overflow: hidden;
+    background: #000;
+}
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Dim the video slightly */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(9,9,11,0.2) 0%, rgba(9,9,11,0.8) 80%, rgba(9,9,11,1) 100%);
+    z-index: -1;
+}
+
+/* Masks for seamless scrolling */
+.mask-top {
+    position: fixed;
+    top: 0; left: 0; right: 0; height: 100px;
+    background: linear-gradient(to bottom, var(--bg-color) 0%, transparent 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+.mask-bottom {
+    position: fixed;
+    bottom: 0; left: 0; right: 0; height: 200px;
+    background: linear-gradient(to top, var(--bg-color) 0%, transparent 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===========================================================
+   NAVIGATION
+   =========================================================== */
+.navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    z-index: 100;
+    background: linear-gradient(to bottom, rgba(9,9,11,0.9) 0%, transparent 100%);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo-text span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+.nav-links a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+.nav-cta {
+    background: var(--primary);
+    color: #fff !important;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+}
+.nav-cta:hover { background: var(--primary-hover); transform: translateY(-2px); }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none; border: none;
+    flex-direction: column; gap: 5px;
+    z-index: 101;
+}
+.hamburger span {
+    display: block; width: 25px; height: 3px;
+    background: #fff; border-radius: 3px;
+    transition: all 0.3s;
+}
+
+/* ===========================================================
+   LAYOUT & CONTAINERS
+   =========================================================== */
+.main-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+section { padding: 5rem 5%; }
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15vh;
+}
+.hero-content { max-width: 800px; animation: fadeInUp 1s ease-out forwards; }
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+}
+.hero-accent { color: var(--accent); }
+.hero-sub {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    color: #e4e4e7;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Glass Cards */
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Typography elements */
+.section-title { font-size: 2.5rem; margin-bottom: 2rem; text-align: center; }
+.title-wrapper { text-align: center; margin-bottom: 3rem; }
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+.cta-button:hover { background: var(--primary-hover); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3); }
+.cta-button.outline { background: transparent; border: 2px solid #fff; }
+.cta-button.outline:hover { background: #fff; color: #000; }
+
+/* ===========================================================
+   REVIEWS & SERVICES
+   =========================================================== */
+.review-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.stars { color: #fbbf24; font-size: 1.2rem; letter-spacing: 2px; }
+.review-text { font-size: 1.1rem; font-style: italic; color: #e4e4e7; line-height: 1.6; flex-grow: 1; }
+.reviewer { font-weight: 700; color: var(--accent); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px; }
+
+/* ===========================================================
+   FOOTER
+   =========================================================== */
+footer {
+    padding: 4rem 5% 2rem;
+    text-align: center;
+    background: var(--bg-color);
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+}
+.footer-content { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; align-items: center; }
+.footer-copy { color: #fff; font-size: 0.9rem; line-height: 1.7; }
+
+/* ===========================================================
+   MOBILE RESPONSIVENESS
+   =========================================================== */
+@media (max-width: 768px) {
+    .hamburger { display: flex; }
+    .nav-links {
+        position: fixed;
+        top: 0; right: -100%;
+        height: 100vh; width: 100%;
+        background: rgba(9,9,11,0.98);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s ease-in-out;
+    }
+    .nav-links.active { right: 0; }
+    .hamburger.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .hero-actions { flex-direction: column; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
