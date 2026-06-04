@@ -12,6 +12,98 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // ── Review Carousel Logic ──────────────────────────────────
+    function initCarousel() {
+        const track = document.getElementById('review-track');
+        if (!track) return;
+        const slides = Array.from(track.children);
+        if (slides.length === 0) return;
+        
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        
+        let currentIndex = 0;
+        let isDragging = false;
+        let startPos = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let animationID;
+
+        function updateCarousel() {
+            const slideWidth = slides[0].getBoundingClientRect().width;
+            const gap = 32; // 2rem gap
+            currentTranslate = currentIndex * -(slideWidth + gap);
+            prevTranslate = currentTranslate;
+            track.style.transform = `translateX(${currentTranslate}px)`;
+        }
+
+        if (nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < slides.length - 1) currentIndex++;
+                updateCarousel();
+            });
+        }
+        if (prevBtn) {
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) currentIndex--;
+                updateCarousel();
+            });
+        }
+
+        // Drag handlers
+        track.addEventListener('mousedown', dragStart);
+        track.addEventListener('touchstart', dragStart, {passive: true});
+        track.addEventListener('mouseup', dragEnd);
+        track.addEventListener('mouseleave', dragEnd);
+        track.addEventListener('touchend', dragEnd);
+        track.addEventListener('mousemove', dragAction);
+        track.addEventListener('touchmove', dragAction, {passive: true});
+
+        function dragStart(e) {
+            isDragging = true;
+            startPos = getPositionX(e);
+            animationID = requestAnimationFrame(animationLoop);
+            track.style.transition = 'none';
+        }
+
+        function dragAction(e) {
+            if (!isDragging) return;
+            const currentPosition = getPositionX(e);
+            currentTranslate = prevTranslate + currentPosition - startPos;
+        }
+
+        function dragEnd() {
+            isDragging = false;
+            cancelAnimationFrame(animationID);
+            const movedBy = currentTranslate - prevTranslate;
+            
+            // Snap threshold
+            if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1;
+            if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
+            
+            track.style.transition = 'transform 0.5s ease-out';
+            updateCarousel();
+        }
+
+        function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+        }
+
+        function animationLoop() {
+            track.style.transform = `translateX(${currentTranslate}px)`;
+            if (isDragging) requestAnimationFrame(animationLoop);
+        }
+        
+        // Auto-play (optional)
+        // setInterval(() => {
+        //     if (!isDragging && currentIndex < slides.length - 1) { currentIndex++; updateCarousel(); }
+        //     else if (!isDragging && currentIndex === slides.length - 1) { currentIndex = 0; updateCarousel(); }
+        // }, 5000);
+
+        window.addEventListener('resize', updateCarousel);
+    }
+    initCarousel();
+
     // ── Global Click Event Delegation (SPA & Modals) ───────────
     document.body.addEventListener('click', async e => {
         // Modals
@@ -90,6 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentMain.innerHTML = newMain.innerHTML;
                 currentMain.className = newMain.className;
             }
+
+            // Re-init carousel if present
+            initCarousel();
 
             // Swap modals dynamically
             document.querySelectorAll('.modal-overlay').forEach(m => m.remove());

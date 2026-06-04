@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="bg-container">
-        <img src="assets/plumbing-1.png" alt="Luxury Bathroom Sink" id="bg-image">
+        <img src="assets/plumbing-light-1.png" alt="Luxury Bathroom Sink" id="bg-image">
         <div class="overlay"></div>
     </div>
 
@@ -40,7 +40,7 @@
                 <h1 class="hero-title"><span class="line-halo">Flow Restored.<br>Stress <span class="hero-accent">Relieved.</span></span></h1>
                 <p class="hero-sub"><span class="line-halo">Premium residential plumbing, 24/7 emergency response, and expert repiping delivered with white-glove service.</span></p>
                 <div class="hero-actions">
-                    <button class="cta-button contact-btn" data-service="emergency">Request Emergency Service</button>
+                    <a href="tel:5550198" class="cta-button">Call Emergency Service</a>
                     <a href="services.html" class="cta-button outline">View Our Services</a>
                 </div>
             </div>
@@ -54,17 +54,17 @@
             <div class="grid-container">
                 <div class="glass-card" style="text-align: left;">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Emergency Repairs</h3>
-                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Burst pipes, overflowing toilets, and major leaks handled immediately, 24/7.</p>
-                    <button class="cta-button outline contact-btn" data-service="emergency" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Help Now</button>
+                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Burst pipes, overflowing toilets, and major leaks handled immediately, 24/7.</p>
+                    <a href="tel:5550198" class="cta-button outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Help Now</a>
                 </div>
                 <div class="glass-card" style="text-align: left;">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Whole-Home Repiping</h3>
-                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Replace old galvanized or polybutylene pipes with modern, durable PEX or copper.</p>
+                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Replace old galvanized or polybutylene pipes with modern, durable PEX or copper.</p>
                     <button class="cta-button outline contact-btn" data-service="repiping" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Request Quote</button>
                 </div>
                 <div class="glass-card" style="text-align: left;">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Water Heaters</h3>
-                    <p style="color:#e4e4e7; margin-bottom: 1.5rem;">Installation and repair of traditional tank and modern tankless water heating systems.</p>
+                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Installation and repair of traditional tank and modern tankless water heating systems.</p>
                     <button class="cta-button outline contact-btn" data-service="water_heater" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Schedule Service</button>
                 </div>
             </div>
@@ -81,79 +81,108 @@
             <div class="grid-container">
                 <div class="glass-card">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">24/7 Availability</h3>
-                    <p style="color:#e4e4e7;">Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock to secure your home.</p>
+                    <p style="color:var(--text-muted);">Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock to secure your home.</p>
                 </div>
                 <div class="glass-card">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Clean Workspaces</h3>
-                    <p style="color:#e4e4e7;">We treat your home like a sanctuary. Boot covers, drop cloths, and a spotless cleanup are guaranteed on every single job.</p>
+                    <p style="color:var(--text-muted);">We treat your home like a sanctuary. Boot covers, drop cloths, and a spotless cleanup are guaranteed on every single job.</p>
                 </div>
                 <div class="glass-card">
                     <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Upfront Pricing</h3>
-                    <p style="color:#e4e4e7;">No hidden fees. No surprise charges. We diagnose the issue and provide a clear, firm quote before any wrenches are turned.</p>
+                    <p style="color:var(--text-muted);">No hidden fees. No surprise charges. We diagnose the issue and provide a clear, firm quote before any wrenches are turned.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials (Moved from Reviews page) -->
+        <!-- Testimonials (Carousel) -->
         <section class="overview-section">
             <div class="title-wrapper">
                 <h2 class="section-title"><span class="line-halo">What Our Clients Say</span></h2>
             </div>
-            <div class="grid-container">
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"We had a shower bathtub overhaul done in 2 weeks with good planning by Liberty Plumbing. Highly highly recommended. They do great work and backup their work and follow up on whatever is needed."</p>
-                    <span class="reviewer">— Kini Tran</span>
+            
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="review-track">
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"We had a shower bathtub overhaul done in 2 weeks with good planning by Liberty Plumbing. Highly highly recommended. They do great work and backup their work and follow up on whatever is needed."</p>
+                            <span class="reviewer">— Kini Tran</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"I highly recommend Liberty Plumbing! I called Justin in a pinch, and he had a technician out there same-day. Zach was super professional, and had my water heaters fixed within minutes."</p>
+                            <span class="reviewer">— Dillon Farr</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Awesome service and work, very polite and helpful. Not one of those companies that are just out for your money! Have any plumbing issues, Liberty Plumbing is the one to call!!"</p>
+                            <span class="reviewer">— Zach Dunn</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Contacted Liberty Plumbing about a gas leak, even though it was after hours they assured me they would have one of their technicians out the next day. Fixed the problem within a few minutes."</p>
+                            <span class="reviewer">— Britney Moody</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Great communication with my project. Highly recommend, prices were perfect for my budget! Thanks Floyd"</p>
+                            <span class="reviewer">— Mike DeFrance</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Justin and his entire team have been nothing but professional, knowledgeable, and punctual. Very good communication with this contractor. I was made aware of all costs beforehand."</p>
+                            <span class="reviewer">— Suzan Foster</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"After a toilet catastrophe... they responded immediately and handled everything with incredible skill and professionalism. They replaced the toilet quickly and turned a disaster into a stress-free fix."</p>
+                            <span class="reviewer">— Kim Perez</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Liberty Plumbing is the best. Justin and his team did an awesome job replacing my water heater (IN THE ATTIC) with no problem. They were fast and very professional."</p>
+                            <span class="reviewer">— Daniel Coborn</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"BEST in the business! I had 2 Hot Water Heaters at separate locations start leaking, Liberty Plumbing stepped up and bailed us out. FAST response, outstanding professionalism."</p>
+                            <span class="reviewer">— Texas Marine-0411</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Justin you ROCK!! You and your guys are Awesome and really took care of my grandparents and I can't thank you enough. I would HIGHLY RECOMMEND Liberty Plumbing to anyone."</p>
+                            <span class="reviewer">— Lacy Feller</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="glass-card review-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">"Absolutely top-notch! They responded incredibly fast... It’s rare to find a company that combines quick response times with such high-quality service. Highly recommend them!"</p>
+                            <span class="reviewer">— Sharon Anderson</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"I highly recommend Liberty Plumbing! I called Justin in a pinch, and he had a technician out there same-day. Zach was super professional, and had my water heaters fixed within minutes."</p>
-                    <span class="reviewer">— Dillon Farr</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Awesome service and work, very polite and helpful. Not one of those companies that are just out for your money! Have any plumbing issues, Liberty Plumbing is the one to call!!"</p>
-                    <span class="reviewer">— Zach Dunn</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Contacted Liberty Plumbing about a gas leak, even though it was after hours they assured me they would have one of their technicians out the next day. Fixed the problem within a few minutes."</p>
-                    <span class="reviewer">— Britney Moody</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Great communication with my project. Highly recommend, prices were perfect for my budget! Thanks Floyd"</p>
-                    <span class="reviewer">— Mike DeFrance</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Justin and his entire team have been nothing but professional, knowledgeable, and punctual. Very good communication with this contractor. I was made aware of all costs beforehand."</p>
-                    <span class="reviewer">— Suzan Foster</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"After a toilet catastrophe... they responded immediately and handled everything with incredible skill and professionalism. They replaced the toilet quickly and turned a disaster into a stress-free fix."</p>
-                    <span class="reviewer">— Kim Perez</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Liberty Plumbing is the best. Justin and his team did an awesome job replacing my water heater (IN THE ATTIC) with no problem. They were fast and very professional."</p>
-                    <span class="reviewer">— Daniel Coborn</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"BEST in the business! I had 2 Hot Water Heaters at separate locations start leaking, Liberty Plumbing stepped up and bailed us out. FAST response, outstanding professionalism."</p>
-                    <span class="reviewer">— Texas Marine-0411</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Justin you ROCK!! You and your guys are Awesome and really took care of my grandparents and I can't thank you enough. I would HIGHLY RECOMMEND Liberty Plumbing to anyone."</p>
-                    <span class="reviewer">— Lacy Feller</span>
-                </div>
-                <div class="glass-card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Absolutely top-notch! They responded incredibly fast... It’s rare to find a company that combines quick response times with such high-quality service. Highly recommend them!"</p>
-                    <span class="reviewer">— Sharon Anderson</span>
+                <div class="carousel-nav">
+                    <button class="carousel-btn" id="prev-btn" aria-label="Previous Reviews">❮</button>
+                    <button class="carousel-btn" id="next-btn" aria-label="Next Reviews">❯</button>
                 </div>
             </div>
         </section>
@@ -171,7 +200,7 @@
         <div class="modal-content">
             <button class="modal-close">&times;</button>
             <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
-            <p style="text-align: center; color: #e4e4e7; margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--accent); font-weight: bold;">(555) 019-8123</a>.</p>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--primary); font-weight: bold;">(555) 019-8123</a>.</p>
             <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
                 <input type="text" placeholder="Full Name" required>
                 <input type="tel" placeholder="Phone Number" required>
