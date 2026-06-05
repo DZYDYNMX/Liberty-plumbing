@@ -2,91 +2,91 @@ import os
 
 cities_data = {
     "Bellaire": {
-        "desc": "Enhance the comfort of the \"City of Homes.\" We replace bulky tanks with high-performance tankless technology, delivering instant, endless hot water to Bellaire residents.",
+        "desc": "Enhance the comfort of the 'City of Homes.' From rapidly repairing aging galvanized pipes in historic properties to installing modern fixtures in new renovations, Liberty Plumbing provides Bellaire residents with elite, white-glove plumbing services.",
         "neighborhoods": ["Southampton", "Braeswood Place", "Meyerland", "West University Place", "Gulfton", "Midtown", "Afton Oaks", "River Oaks", "Greenway Plaza", "Bellaire Junction"]
     },
     "Missouri City": {
-        "desc": "Bring modern luxury to the \"Show Me City.\" We replace outdated tanks with efficient tankless systems, ensuring Missouri City homes enjoy endless hot water on demand.",
+        "desc": "Bring modern luxury to the 'Show Me City.' Whether you are dealing with an unexpected slab leak or need comprehensive drain cleaning for a sluggish sewer line, our experts ensure Missouri City homes maintain flawless water flow.",
         "neighborhoods": ["Sienna", "Quail Valley", "Riverstone", "Lake Olympia", "Brightwater", "Hunters Glen", "Colony Lakes", "Meadowcreek", "Glenn Lakes", "Lexington"]
     },
     "Richmond": {
-        "desc": "Merge historic charm with modern innovation in the heart of Fort Bend. We upgrade Richmond homes from outdated tanks to premium tankless systems for instant, endless hot water.",
+        "desc": "Merge historic charm with modern reliability in the heart of Fort Bend. Liberty Plumbing upgrades Richmond homes by resolving persistent pipe leaks, performing whole-home repiping, and tackling emergency plumbing catastrophes 24/7.",
         "neighborhoods": ["Aliana", "Pecan Grove", "Long Meadow Farms", "Waterside Estates", "Lakes of Bella Terra", "Grand Mission", "Harvest Green", "Fieldstone", "Weston Lakes", "River Park West"]
     },
     "Brookshire": {
-        "desc": "Bring state-of-the-art efficiency to the \"Gateway to the Katy Prairie.\" We replace aging tanks with advanced tankless systems, ensuring Brookshire homes enjoy instant, endless hot water.",
+        "desc": "Bring state-of-the-art plumbing efficiency to the 'Gateway to the Katy Prairie.' We handle everything from deep sewer line hydro-jetting to outdoor irrigation pipe repairs, ensuring Brookshire homes operate flawlessly.",
         "neighborhoods": ["Crystal Lakes", "Willow Creek Farms", "Patti Lynn", "Brookwood", "Fulbrook", "Weston Lakes", "Cross Creek Ranch", "Jordan Ranch", "Woodland Lakes", "Brazos Country"]
     },
     "Jersey Village": {
-        "desc": "Experience reliable tankless water heating in Jersey Village. Our expert team delivers professional installation and maintenance services for this thriving northwest Houston community, ensuring your home enjoys endless hot water year-round.",
+        "desc": "Experience reliable, rapid-response plumbing in Jersey Village. Our expert team delivers professional installation and emergency maintenance, from unclogging severe drain blockages to securing major main-line water leaks.",
         "neighborhoods": ["Jersey Village Country Club", "Winchester", "Steeplechase", "White Oak Falls", "Eldridge", "Wortham Estates", "Windermere Lakes", "Tower Oaks", "Westbridge", "Stone Gables"]
     },
     "Magnolia": {
-        "desc": "Experience modern comfort in the heart of the Piney Woods. We upgrade Magnolia homes with advanced tankless water heaters, providing on-demand hot water and exceptional energy efficiency.",
+        "desc": "Experience unparalleled comfort in the heart of the Piney Woods. We support Magnolia homeowners with heavy-duty plumbing solutions, including deep well-pump integration repairs, septic-to-sewer transitions, and comprehensive pipe winterization.",
         "neighborhoods": ["High Meadow Ranch", "Thousand Oaks", "Indigo Lake Estates", "Sendera Lake Estates", "Westwood", "Ranch Crest", "Clear Creek Forest", "Durango Creek", "Mostyn Manor", "North Grove"]
     },
     "Conroe": {
-        "desc": "Enhance your daily routine near Lake Conroe. We replace outdated units with modern tankless water heaters in Conroe, delivering on-demand hot water and efficiency.",
+        "desc": "Enhance your daily routine near Lake Conroe. Liberty Plumbing provides rapid response for burst pipes, overflowing toilets, and comprehensive bathroom overhauls, delivering precision craftsmanship to every Conroe neighborhood.",
         "neighborhoods": ["Grand Central Park", "Woodforest", "April Sound", "Walden", "Barton Creek Ranch", "Rivershire", "Stewart's Forest", "Teas Lakes", "Water Crest on Lake Conroe", "Harper's Preserve"]
     },
     "Splendora": {
-        "desc": "Experience the comfort of constant hot water in the \"City of Splendor.\" We replace inefficient tanks with modern tankless systems, delivering instant performance to Splendora homes.",
+        "desc": "Experience true peace of mind in the 'City of Splendor.' We specialize in robust residential plumbing, replacing failing polybutylene pipes, executing pinpoint leak detection, and resolving severe municipal water pressure issues.",
         "neighborhoods": ["Timberland Estates", "Pinewood", "Splendora Fields", "Peach Creek Plantation", "Cole Camp", "Tullis Farms", "Enclave at Splendora", "Midline Crossing", "Deerwood", "Northwood"]
     },
     "Cleveland": {
-        "desc": "Bring modern efficiency to the gateway of the Piney Woods. We replace bulky tanks with advanced tankless technology, ensuring Cleveland homes enjoy endless hot water instantly.",
+        "desc": "Bring modern plumbing reliability to the gateway of the Piney Woods. We deploy advanced camera inspections to clear heavily rooted sewer lines and perform flawless fixture installations for Cleveland homes.",
         "neighborhoods": ["Tarkington Prairie", "Kirbywood", "Glen Fenner", "Oakwood", "Grand San Jacinto", "Santa Fe", "Trails End", "Pin Oak", "Plum Grove", "Splendora Woods"]
     },
     "Willis": {
-        "desc": "Bring modern tankless efficiency to your Willis home. We replace aging tanks with sophisticated tankless technology that delivers immediate hot water without the wait.",
+        "desc": "Secure your Willis property against unexpected water damage. We deliver immediate emergency plumbing services, tackling everything from catastrophic pipe bursts to silent, damaging slab leaks hidden deep under your foundation.",
         "neighborhoods": ["Point Aquarius", "Corinthian Point", "Seven Coves", "Clear Water Cove", "Lake Conroe Hills", "Arrowhead Lakes", "Texas Grand Ranch", "Huntsville", "Cove on Lake Conroe", "Harbor Town"]
     },
     "Houston": {
-        "desc": "Stop fighting over the shower. We help Houston homeowners transition from bulky, failing tanks to streamlined on-demand systems that provide a constant flow of hot water, regardless of your household size.",
+        "desc": "Stop stressing over plumbing disasters. We help Houston homeowners transition from failing, leaky cast-iron infrastructure to modern PEX and copper systems, offering comprehensive leak detection, drain clearing, and emergency repairs.",
         "neighborhoods": ["River Oaks", "Houston Heights", "Montrose", "Memorial", "Midtown", "EaDo", "Upper Kirby", "West University Place", "Meyerland", "Tanglewood", "Bellaire", "Rice Village"]
     },
     "Spring": {
-        "desc": "Reclaim your garage space and lower your monthly utility costs. We install high-efficiency tankless units across Spring that are perfectly suited for the modern residential infrastructure of North Houston.",
+        "desc": "Protect your home and lower your monthly utility costs by addressing hidden leaks. We execute high-precision plumbing repairs across Spring, perfectly suited for the diverse residential infrastructure of North Houston.",
         "neighborhoods": ["Gleannloch Farms", "Windrose", "Champion Forest", "Augusta Pines", "Auburn Lakes", "Benders Landing", "Spring Trails", "Harmony", "Legends Run", "Imperial Oaks"]
     },
     "Tomball": {
-        "desc": "Protect your home from the sediment buildup common in our local water. Our Tomball tankless solutions are engineered for longevity and consistent temperature control, even during peak usage hours.",
+        "desc": "Protect your home from the sediment buildup and hard water common in our area. Our Tomball plumbing solutions are engineered for longevity, covering everything from routine fixture maintenance to complex whole-home repiping.",
         "neighborhoods": ["Wildwood at Northpointe", "Lakewood Grove", "Village Creek", "Treeline", "Rosehill Reserve", "Amira", "Woodtrace", "Lakes at Creekside", "Raleigh Creek", "Inverness Estates"]
     },
     "Cypress": {
-        "desc": "Cypress families in Bridgeland, Towne Lake, and Coles Crossing trust us for tankless installation, repair, and annual maintenance. Appointments available across 77429 and 77433.",
+        "desc": "Cypress families in Bridgeland, Towne Lake, and Coles Crossing trust us for rapid emergency plumbing, deep sewer hydro-jetting, and flawless fixture installations. Same-day appointments available across 77429 and 77433.",
         "neighborhoods": ["Bridgeland", "Towne Lake", "Coles Crossing", "Fairfield", "Cypress Creek Lakes", "Blackhorse Ranch", "Lakeland Village", "Canyon Lakes", "Rock Creek", "Longwood"]
     },
     "Sugar Land": {
-        "desc": "Bring the latest in home efficiency to the 'Sweetest City in Texas.' We replace aging tanks with sophisticated tankless technology that delivers immediate hot water without the wait or the waste.",
+        "desc": "Bring the latest in home infrastructure to the 'Sweetest City in Texas.' We replace aging, corroded pipes with sophisticated PEX-A technology and rapidly resolve any severe drainage issues without tearing up your lawn.",
         "neighborhoods": ["First Colony", "Telfair", "Riverstone", "Greatwood", "New Territory", "Sugar Creek", "Sweetwater", "Avalon", "Commonwealth", "Aliana"]
     },
     "Katy": {
-        "desc": "Don't let a traditional water heater limit your comfort. We provide Katy households with rapid-response tankless systems that handle simultaneous showers and laundry without skipping a beat.",
+        "desc": "Don't let a plumbing emergency ruin your weekend. We provide Katy households with rapid-response service for overflowing toilets, sudden gas leaks, and clogged main sewer lines, restoring your comfort immediately.",
         "neighborhoods": ["Cinco Ranch", "Seven Meadows", "Cross Creek Ranch", "Firethorne", "Grand Lakes", "Elyson", "Cane Island", "Pine Mill Ranch", "Silver Ranch", "Nottingham Country"]
     },
     "Galveston": {
-        "desc": "Defend your home against the coastal elements with a system built for the island. Our Galveston tankless installations are ideal for beach houses and rentals where hot water demand is high and space is at a premium.",
+        "desc": "Defend your home against the coastal elements with plumbing built for the island. Our Galveston repairs and installations are ideal for beach houses and rentals where saltwater corrosion and high usage demand heavy-duty solutions.",
         "neighborhoods": ["East End Historical District", "Pirates Beach", "Sea Isle", "Jamaica Beach", "Tiki Island", "Evia", "Campeche Cove", "San Jacinto", "Laffites Cove", "Beachtown"]
     },
     "Brazoria": {
-        "desc": "Whether you're by the river or in the heart of town, we bring reliable, modern water heating to Brazoria. Our systems are designed to offer consistent heat and lower maintenance compared to traditional tanks.",
+        "desc": "Whether you're by the river or in the heart of town, we bring reliable, modern plumbing to Brazoria. Our highly trained technicians specialize in isolating deep slab leaks and restoring compromised residential water mains.",
         "neighborhoods": ["Lake Jackson", "Angleton", "Freeport", "Clute", "Sweeny", "West Columbia", "Richwood", "Danbury", "Holiday Lakes", "Bailey's Prairie"]
     },
     "Waller": {
-        "desc": "As Waller grows, so does the need for efficient home technology. We help local residents install suitcase-sized water heaters that offer a massive upgrade in performance over old-fashioned bulky tanks.",
+        "desc": "As Waller grows, so does the need for robust home infrastructure. We help local residents upgrade old galvanized plumbing, install high-flow fixtures, and maintain crystal-clear drainage systems year-round.",
         "neighborhoods": ["Hockley", "Rose Hill", "Prairie View", "Monaville", "Fields Store", "Pine Island", "Macedonia", "Howth", "Hempstead", "Katy"]
     },
     "Fort Bend": {
-        "desc": "Serving the diverse needs of the entire county, we provide high-flow tankless solutions that ensure every bathroom in your home has access to instant, steaming water whenever it's needed.",
+        "desc": "Serving the diverse needs of the entire county, we provide high-performance plumbing solutions that ensure every bathroom, kitchen, and utility room in your home operates smoothly without leaks or pressure drops.",
         "neighborhoods": ["Richmond", "Rosenberg", "Needville", "Fulshear", "Meadows Place", "Stafford", "Arcola", "Thompsons", "Pleak", "Fairchilds"]
     },
     "Montgomery": {
-        "desc": "Perfect for lakefront living, our Montgomery tankless systems provide the volume needed for busy households while resisting the mineral buildup often found in Montgomery County water.",
+        "desc": "Perfect for lakefront living, our Montgomery plumbing services range from emergency pipe patching to comprehensive fixture upgrades, ensuring your home easily handles the demands of a busy household.",
         "neighborhoods": ["Walden", "Bentwater", "April Sound", "Grand Harbor", "Crown Oaks", "Blue Heron Bay", "Del Lago", "Buffalo Springs", "Ridgelake Shores", "Waterford Estates"]
     },
     "Liberty": {
-        "desc": "Bring modern convenience to one of Texas's most historic cities. We specialize in retrofitting Liberty homes with sleek, on-demand water heaters that provide a steady flow of hot water without the threat of a major tank leak.",
+        "desc": "Bring modern convenience to one of Texas's most historic cities. We specialize in retrofitting Liberty homes with highly durable piping, clearing stubborn root intrusions from sewer lines, and providing 24/7 emergency repair.",
         "neighborhoods": ["Cypress Point", "Dayton (Liberty side)", "Downtown Liberty", "Grand San Jacinto", "Hidden Lake", "Horseshoe Lake Estates", "Knights Forest", "Liberty Forest", "Liberty Heights", "Moss Bluff", "Old River-Winfree (Liberty side)", "Palmer Place", "Raywood", "Riverside", "South Liberty", "Trinity River Estates", "Twin Island", "West Liberty", "Woods of Liberty"]
     }
 }
@@ -96,9 +96,9 @@ html_template = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberty Plumbing | Expert Plumbers in {city}, TX</title>
+    <title>Liberty Plumbing | Expert Emergency Plumbers in {city}, TX</title>
     <meta name="description" content="{desc}">
-    <meta name="keywords" content="plumber {city}, emergency plumbing {city}, tankless water heater {city}, leak detection {city}, repiping {city}">
+    <meta name="keywords" content="plumber {city}, emergency plumbing {city}, leak detection {city}, drain cleaning {city}, repiping {city}, sewer repair {city}">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -124,6 +124,7 @@ html_template = """<!DOCTYPE html>
             <li><a href="index.html">Overview</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="areas.html" class="active">Areas</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="about.html">About</a></li>
             <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
         </ul>
@@ -172,7 +173,8 @@ html_template = """<!DOCTYPE html>
             <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
             <div style="margin-top: 1rem;">
                 <a href="areas.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
-                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services & FAQs</a>
+                <a href="faq.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
+                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
             </div>
         </div>
     </footer>
@@ -265,6 +267,7 @@ areas_hub_template = """<!DOCTYPE html>
             <li><a href="index.html">Overview</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="areas.html" class="active">Areas</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="about.html">About</a></li>
             <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
         </ul>
@@ -274,7 +277,7 @@ areas_hub_template = """<!DOCTYPE html>
         <section class="overview-section" style="padding-top: 5vh;">
             <div class="title-wrapper">
                 <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Areas We <span class="hero-accent">Serve.</span></span></h1>
-                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">Click a city below to view our dedicated local services. Note: Some remote areas are subject to an additional travel fee.</span></p>
+                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">Click a city below to view our dedicated local emergency plumbing services. Note: Some remote areas are subject to an additional travel fee.</span></p>
             </div>
             
             <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
@@ -287,6 +290,11 @@ areas_hub_template = """<!DOCTYPE html>
         <div class="footer-content">
             <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
             <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
+            <div style="margin-top: 1rem;">
+                <a href="areas.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
+                <a href="faq.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
+                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
+            </div>
         </div>
     </footer>
     <script src="script.js"></script>

@@ -101,6 +101,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://liberty-plumbing-example.com/faq.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://liberty-plumbing-example.com/area-willis.html</loc>
     <priority>0.8</priority>
   </url>
