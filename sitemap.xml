@@ -33,10 +33,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liberty-plumbing-example.com/areas.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://liberty-plumbing-example.com/area-cypress.html</loc>
     <priority>0.8</priority>
   </url>

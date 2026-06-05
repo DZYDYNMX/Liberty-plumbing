@@ -123,7 +123,7 @@ html_template = """<!DOCTYPE html>
         <ul class="nav-links">
             <li><a href="index.html">Overview</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="areas.html" class="active">Areas</a></li>
+            <li><a href="index.html#areas" class="active">Areas</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="about.html">About</a></li>
             <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
@@ -172,7 +172,7 @@ html_template = """<!DOCTYPE html>
             <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
             <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
             <div style="margin-top: 1rem;">
-                <a href="areas.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
+                <a href="index.html#areas" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
                 <a href="faq.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
                 <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
             </div>
@@ -227,81 +227,4 @@ for city, data in cities_data.items():
     with open(filename, "w") as f:
         f.write(content)
         
-    areas_html_items.append(f"""
-        <a href="{filename}" class="glass-card" style="text-decoration: none; text-align: left; transition: transform 0.2s;">
-            <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:0.5rem;">{city}</h3>
-            <p style="color:var(--text-muted); font-size: 0.95rem;">{data['desc']}</p>
-        </a>
-    """)
-
-# Generate areas.html
-areas_hub_template = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberty Plumbing | Service Areas</title>
-    <meta name="description" content="View all of the areas Liberty Plumbing services across the Greater Houston Area including Katy, Sugar Land, Cypress, and more.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
-    <link rel="canonical" href="https://liberty-plumbing-example.com/areas.html">
-</head>
-<body>
-    <div class="bg-container">
-        <img src="assets/plumbing-light-2.png" alt="Copper pipes" id="bg-image">
-        <div class="overlay"></div>
-    </div>
-
-    <div class="mask-top"></div>
-    <div class="mask-bottom"></div>
-
-    <nav class="navbar">
-        <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
-        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="areas.html" class="active">Areas</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
-        </ul>
-    </nav>
-
-    <main class="main-content">
-        <section class="overview-section" style="padding-top: 5vh;">
-            <div class="title-wrapper">
-                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Areas We <span class="hero-accent">Serve.</span></span></h1>
-                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">Click a city below to view our dedicated local emergency plumbing services. Note: Some remote areas are subject to an additional travel fee.</span></p>
-            </div>
-            
-            <div class="grid-container" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                {items}
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
-            <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
-            <div style="margin-top: 1rem;">
-                <a href="areas.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
-                <a href="faq.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
-                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
-            </div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>"""
-
-with open("areas.html", "w") as f:
-    f.write(areas_hub_template.replace("{items}", "".join(areas_html_items)))
-
-print("Successfully generated 21 area pages and areas.html!")
+    print("Successfully generated 21 area pages!")
