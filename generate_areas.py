@@ -2,91 +2,91 @@ import os
 
 cities_data = {
     "Bellaire": {
-        "desc": "Enhance the comfort of the 'City of Homes.' From rapidly repairing aging galvanized pipes in historic properties to installing modern fixtures in new renovations, Liberty Plumbing provides Bellaire residents with elite, white-glove plumbing services.",
+        "desc": "Liberty Plumbing delivers top-tier emergency repair and residential plumbing services to the Bellaire community. From sudden pipe bursts in historic properties to comprehensive repiping projects, our certified technicians ensure your plumbing infrastructure is secure and fully operational.",
         "neighborhoods": ["Southampton", "Braeswood Place", "Meyerland", "West University Place", "Gulfton", "Midtown", "Afton Oaks", "River Oaks", "Greenway Plaza", "Bellaire Junction"]
     },
     "Missouri City": {
-        "desc": "Bring modern luxury to the 'Show Me City.' Whether you are dealing with an unexpected slab leak or need comprehensive drain cleaning for a sluggish sewer line, our experts ensure Missouri City homes maintain flawless water flow.",
+        "desc": "Residents of Missouri City trust Liberty Plumbing for fast, reliable emergency interventions. Our expert team specializes in advanced leak detection, main sewer line clearing, and complete bathroom plumbing overhauls designed to withstand the Texas climate.",
         "neighborhoods": ["Sienna", "Quail Valley", "Riverstone", "Lake Olympia", "Brightwater", "Hunters Glen", "Colony Lakes", "Meadowcreek", "Glenn Lakes", "Lexington"]
     },
     "Richmond": {
-        "desc": "Merge historic charm with modern reliability in the heart of Fort Bend. Liberty Plumbing upgrades Richmond homes by resolving persistent pipe leaks, performing whole-home repiping, and tackling emergency plumbing catastrophes 24/7.",
+        "desc": "We provide Richmond homeowners with elite, full-service plumbing solutions. Whether you are dealing with a severe slab leak, a backed-up sewer drain, or require emergency gas line repairs, our dispatch teams are available 24/7 to protect your property.",
         "neighborhoods": ["Aliana", "Pecan Grove", "Long Meadow Farms", "Waterside Estates", "Lakes of Bella Terra", "Grand Mission", "Harvest Green", "Fieldstone", "Weston Lakes", "River Park West"]
     },
     "Brookshire": {
-        "desc": "Bring state-of-the-art plumbing efficiency to the 'Gateway to the Katy Prairie.' We handle everything from deep sewer line hydro-jetting to outdoor irrigation pipe repairs, ensuring Brookshire homes operate flawlessly.",
+        "desc": "When plumbing disasters strike in Brookshire, Liberty Plumbing is ready to respond. We offer heavy-duty hydro-jetting, precise underground pipe repairs, and comprehensive residential plumbing services that prioritize speed and long-term durability.",
         "neighborhoods": ["Crystal Lakes", "Willow Creek Farms", "Patti Lynn", "Brookwood", "Fulbrook", "Weston Lakes", "Cross Creek Ranch", "Jordan Ranch", "Woodland Lakes", "Brazos Country"]
     },
     "Jersey Village": {
-        "desc": "Experience reliable, rapid-response plumbing in Jersey Village. Our expert team delivers professional installation and emergency maintenance, from unclogging severe drain blockages to securing major main-line water leaks.",
+        "desc": "Safeguard your Jersey Village home with our premium plumbing services. We handle everything from stubborn clogs and overflowing toilets to full-scale water damage prevention, ensuring your home's water systems function perfectly.",
         "neighborhoods": ["Jersey Village Country Club", "Winchester", "Steeplechase", "White Oak Falls", "Eldridge", "Wortham Estates", "Windermere Lakes", "Tower Oaks", "Westbridge", "Stone Gables"]
     },
     "Magnolia": {
-        "desc": "Experience unparalleled comfort in the heart of the Piney Woods. We support Magnolia homeowners with heavy-duty plumbing solutions, including deep well-pump integration repairs, septic-to-sewer transitions, and comprehensive pipe winterization.",
+        "desc": "Liberty Plumbing brings high-end plumbing expertise to Magnolia. We are fully equipped to resolve complex well-pump issues, execute deep pipe winterization, and provide immediate emergency relief for catastrophic water leaks.",
         "neighborhoods": ["High Meadow Ranch", "Thousand Oaks", "Indigo Lake Estates", "Sendera Lake Estates", "Westwood", "Ranch Crest", "Clear Creek Forest", "Durango Creek", "Mostyn Manor", "North Grove"]
     },
     "Conroe": {
-        "desc": "Enhance your daily routine near Lake Conroe. Liberty Plumbing provides rapid response for burst pipes, overflowing toilets, and comprehensive bathroom overhauls, delivering precision craftsmanship to every Conroe neighborhood.",
+        "desc": "Homeowners in Conroe rely on our master plumbers for unmatched diagnostic accuracy and repair speed. We excel in locating hidden leaks, repairing compromised main lines, and ensuring your entire plumbing system operates seamlessly.",
         "neighborhoods": ["Grand Central Park", "Woodforest", "April Sound", "Walden", "Barton Creek Ranch", "Rivershire", "Stewart's Forest", "Teas Lakes", "Water Crest on Lake Conroe", "Harper's Preserve"]
     },
     "Splendora": {
-        "desc": "Experience true peace of mind in the 'City of Splendor.' We specialize in robust residential plumbing, replacing failing polybutylene pipes, executing pinpoint leak detection, and resolving severe municipal water pressure issues.",
+        "desc": "We offer Splendora residents uncompromising quality in every plumbing repair. From fixing sudden drop-offs in water pressure to replacing corroded pipes, our licensed professionals deliver permanent solutions to your most stressful plumbing emergencies.",
         "neighborhoods": ["Timberland Estates", "Pinewood", "Splendora Fields", "Peach Creek Plantation", "Cole Camp", "Tullis Farms", "Enclave at Splendora", "Midline Crossing", "Deerwood", "Northwood"]
     },
     "Cleveland": {
-        "desc": "Bring modern plumbing reliability to the gateway of the Piney Woods. We deploy advanced camera inspections to clear heavily rooted sewer lines and perform flawless fixture installations for Cleveland homes.",
+        "desc": "Our rapid-response plumbing teams in Cleveland are dedicated to restoring your home's comfort. We utilize state-of-the-art camera inspections to quickly diagnose sewer blockages and execute precise, minimally invasive pipe repairs.",
         "neighborhoods": ["Tarkington Prairie", "Kirbywood", "Glen Fenner", "Oakwood", "Grand San Jacinto", "Santa Fe", "Trails End", "Pin Oak", "Plum Grove", "Splendora Woods"]
     },
     "Willis": {
-        "desc": "Secure your Willis property against unexpected water damage. We deliver immediate emergency plumbing services, tackling everything from catastrophic pipe bursts to silent, damaging slab leaks hidden deep under your foundation.",
+        "desc": "Liberty Plumbing is the premier choice for Willis homeowners facing severe plumbing issues. We specialize in isolating and repairing destructive slab leaks, upgrading outdated plumbing networks, and providing emergency 24-hour service.",
         "neighborhoods": ["Point Aquarius", "Corinthian Point", "Seven Coves", "Clear Water Cove", "Lake Conroe Hills", "Arrowhead Lakes", "Texas Grand Ranch", "Huntsville", "Cove on Lake Conroe", "Harbor Town"]
     },
     "Houston": {
-        "desc": "Stop stressing over plumbing disasters. We help Houston homeowners transition from failing, leaky cast-iron infrastructure to modern PEX and copper systems, offering comprehensive leak detection, drain clearing, and emergency repairs.",
+        "desc": "As a leading plumbing authority in Houston, we tackle the city's most challenging infrastructure issues. From high-rise condo pipe repairs to historic home repiping, we offer comprehensive leak detection and unmatched emergency drain clearing.",
         "neighborhoods": ["River Oaks", "Houston Heights", "Montrose", "Memorial", "Midtown", "EaDo", "Upper Kirby", "West University Place", "Meyerland", "Tanglewood", "Bellaire", "Rice Village"]
     },
     "Spring": {
-        "desc": "Protect your home and lower your monthly utility costs by addressing hidden leaks. We execute high-precision plumbing repairs across Spring, perfectly suited for the diverse residential infrastructure of North Houston.",
+        "desc": "Protect your Spring property with our expert plumbing interventions. We are highly trained in resolving extensive water damage scenarios, providing rapid main line clog removal, and installing high-performance fixtures for modern homes.",
         "neighborhoods": ["Gleannloch Farms", "Windrose", "Champion Forest", "Augusta Pines", "Auburn Lakes", "Benders Landing", "Spring Trails", "Harmony", "Legends Run", "Imperial Oaks"]
     },
     "Tomball": {
-        "desc": "Protect your home from the sediment buildup and hard water common in our area. Our Tomball plumbing solutions are engineered for longevity, covering everything from routine fixture maintenance to complex whole-home repiping.",
+        "desc": "Tomball residents trust our meticulous approach to residential plumbing. We provide deep sewer line cleaning, expert pipe replacement, and immediate emergency response to prevent water damage and restore your home's essential systems.",
         "neighborhoods": ["Wildwood at Northpointe", "Lakewood Grove", "Village Creek", "Treeline", "Rosehill Reserve", "Amira", "Woodtrace", "Lakes at Creekside", "Raleigh Creek", "Inverness Estates"]
     },
     "Cypress": {
-        "desc": "Cypress families in Bridgeland, Towne Lake, and Coles Crossing trust us for rapid emergency plumbing, deep sewer hydro-jetting, and flawless fixture installations. Same-day appointments available across 77429 and 77433.",
+        "desc": "We are the trusted plumbing professionals for the Cypress area, offering rapid response for everything from minor leaks to major pipe ruptures. Our team ensures your water pressure is optimal and your drainage systems are completely clear.",
         "neighborhoods": ["Bridgeland", "Towne Lake", "Coles Crossing", "Fairfield", "Cypress Creek Lakes", "Blackhorse Ranch", "Lakeland Village", "Canyon Lakes", "Rock Creek", "Longwood"]
     },
     "Sugar Land": {
-        "desc": "Bring the latest in home infrastructure to the 'Sweetest City in Texas.' We replace aging, corroded pipes with sophisticated PEX-A technology and rapidly resolve any severe drainage issues without tearing up your lawn.",
+        "desc": "Liberty Plumbing delivers sophisticated plumbing solutions to Sugar Land homes. We specialize in non-destructive leak detection, advanced PEX repiping, and resolving critical emergency plumbing failures with white-glove professionalism.",
         "neighborhoods": ["First Colony", "Telfair", "Riverstone", "Greatwood", "New Territory", "Sugar Creek", "Sweetwater", "Avalon", "Commonwealth", "Aliana"]
     },
     "Katy": {
-        "desc": "Don't let a plumbing emergency ruin your weekend. We provide Katy households with rapid-response service for overflowing toilets, sudden gas leaks, and clogged main sewer lines, restoring your comfort immediately.",
+        "desc": "When a plumbing emergency threatens your Katy home, our 24/7 dispatch teams are the solution. We rapidly resolve overflowing fixtures, perform heavy-duty drain cleaning, and repair compromised water mains with minimal disruption.",
         "neighborhoods": ["Cinco Ranch", "Seven Meadows", "Cross Creek Ranch", "Firethorne", "Grand Lakes", "Elyson", "Cane Island", "Pine Mill Ranch", "Silver Ranch", "Nottingham Country"]
     },
     "Galveston": {
-        "desc": "Defend your home against the coastal elements with plumbing built for the island. Our Galveston repairs and installations are ideal for beach houses and rentals where saltwater corrosion and high usage demand heavy-duty solutions.",
+        "desc": "We provide Galveston properties with robust, coastal-grade plumbing repairs. From mitigating saltwater corrosion in older pipes to repairing heavy-use vacation home fixtures, our solutions are built for extreme durability.",
         "neighborhoods": ["East End Historical District", "Pirates Beach", "Sea Isle", "Jamaica Beach", "Tiki Island", "Evia", "Campeche Cove", "San Jacinto", "Laffites Cove", "Beachtown"]
     },
     "Brazoria": {
-        "desc": "Whether you're by the river or in the heart of town, we bring reliable, modern plumbing to Brazoria. Our highly trained technicians specialize in isolating deep slab leaks and restoring compromised residential water mains.",
+        "desc": "Liberty Plumbing offers Brazoria homeowners precision diagnostics and permanent plumbing fixes. We excel in identifying hidden foundation leaks and repairing critical residential water mains to keep your home safe and dry.",
         "neighborhoods": ["Lake Jackson", "Angleton", "Freeport", "Clute", "Sweeny", "West Columbia", "Richwood", "Danbury", "Holiday Lakes", "Bailey's Prairie"]
     },
     "Waller": {
-        "desc": "As Waller grows, so does the need for robust home infrastructure. We help local residents upgrade old galvanized plumbing, install high-flow fixtures, and maintain crystal-clear drainage systems year-round.",
+        "desc": "We bring modern, high-efficiency plumbing services to Waller residents. Our certified experts are equipped to upgrade aging residential piping, resolve severe blockages, and provide immediate, reliable emergency plumbing support.",
         "neighborhoods": ["Hockley", "Rose Hill", "Prairie View", "Monaville", "Fields Store", "Pine Island", "Macedonia", "Howth", "Hempstead", "Katy"]
     },
     "Fort Bend": {
-        "desc": "Serving the diverse needs of the entire county, we provide high-performance plumbing solutions that ensure every bathroom, kitchen, and utility room in your home operates smoothly without leaks or pressure drops.",
+        "desc": "Serving the entire Fort Bend community, we are dedicated to executing flawless plumbing repairs. Whether it's a completely blocked sewer line or a sudden indoor flood, our master plumbers deliver rapid, definitive solutions.",
         "neighborhoods": ["Richmond", "Rosenberg", "Needville", "Fulshear", "Meadows Place", "Stafford", "Arcola", "Thompsons", "Pleak", "Fairchilds"]
     },
     "Montgomery": {
-        "desc": "Perfect for lakefront living, our Montgomery plumbing services range from emergency pipe patching to comprehensive fixture upgrades, ensuring your home easily handles the demands of a busy household.",
+        "desc": "Liberty Plumbing is Montgomery's answer to complex residential plumbing challenges. We offer top-tier fixture installations, rapid emergency pipe patching, and comprehensive system overhauls designed to handle peak household demands.",
         "neighborhoods": ["Walden", "Bentwater", "April Sound", "Grand Harbor", "Crown Oaks", "Blue Heron Bay", "Del Lago", "Buffalo Springs", "Ridgelake Shores", "Waterford Estates"]
     },
     "Liberty": {
-        "desc": "Bring modern convenience to one of Texas's most historic cities. We specialize in retrofitting Liberty homes with highly durable piping, clearing stubborn root intrusions from sewer lines, and providing 24/7 emergency repair.",
+        "desc": "We provide the historic city of Liberty with unmatched plumbing expertise. Our professionals are adept at retrofitting older homes with highly durable piping, clearing severe root intrusions, and providing steadfast 24/7 emergency repair.",
         "neighborhoods": ["Cypress Point", "Dayton (Liberty side)", "Downtown Liberty", "Grand San Jacinto", "Hidden Lake", "Horseshoe Lake Estates", "Knights Forest", "Liberty Forest", "Liberty Heights", "Moss Bluff", "Old River-Winfree (Liberty side)", "Palmer Place", "Raywood", "Riverside", "South Liberty", "Trinity River Estates", "Twin Island", "West Liberty", "Woods of Liberty"]
     }
 }
