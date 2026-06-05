@@ -99,7 +99,7 @@ html_template = """<!DOCTYPE html>
     <title>Liberty Plumbing | Expert Emergency Plumbers in {city}, TX</title>
     <meta name="description" content="{desc}">
     <meta name="keywords" content="plumber {city}, emergency plumbing {city}, leak detection {city}, drain cleaning {city}, repiping {city}, sewer repair {city}">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=6">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -152,12 +152,12 @@ html_template = """<!DOCTYPE html>
                         </iframe>
                     </div>
 
-                    <h3 style="color:var(--text-main); font-size: 1.5rem; margin-bottom: 1rem;">Neighborhoods We Serve in {city}</h3>
+                    <h3 style="color:#fff; font-size: 1.5rem; margin-bottom: 1rem;">Neighborhoods We Serve in {city}</h3>
                     <ul style="color:var(--text-muted); font-size: 1.05rem; column-count: 2; column-gap: 2rem; padding-left: 1.5rem; margin-bottom: 2rem;">
                         {neighborhoods_html}
                     </ul>
-
-                    <div style="text-align: center; margin-top: 3rem;">
+                    <div style="text-align: center; margin-top: 4rem;">
+                        <h3 style="color:#fff; font-size: 1.5rem; margin-bottom: 1.5rem;">Need a Local Emergency Plumber in {city}?</h3>
                         <a href="tel:5550198" class="cta-button" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Call Now for Service in {city}</a>
                     </div>
                 </div>
