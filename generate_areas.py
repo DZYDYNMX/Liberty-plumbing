@@ -99,7 +99,7 @@ html_template = """<!DOCTYPE html>
     <title>Liberty Plumbing | Expert Emergency Plumbers in {city}, TX</title>
     <meta name="description" content="{desc}">
     <meta name="keywords" content="plumber {city}, emergency plumbing {city}, leak detection {city}, drain cleaning {city}, repiping {city}, sewer repair {city}">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -123,8 +123,6 @@ html_template = """<!DOCTYPE html>
         <ul class="nav-links">
             <li><a href="index.html">Overview</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="index.html#areas" class="active">Areas</a></li>
-            <li><a href="index.html#faq">FAQ</a></li>
             <li><a href="about.html">About</a></li>
             <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
         </ul>
