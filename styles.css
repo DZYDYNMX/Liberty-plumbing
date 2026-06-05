@@ -406,3 +406,47 @@ footer {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+/* ===========================================================
+   ACCORDION
+   =========================================================== */
+.accordion-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    backdrop-filter: blur(16px);
+}
+.accordion-header {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--primary);
+    transition: background 0.3s;
+}
+.accordion-header:hover {
+    background: rgba(0,0,0,0.02);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+    padding: 0 1.5rem;
+    color: var(--text-muted);
+}
+.accordion-item.active .accordion-content {
+    max-height: 1000px;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.accordion-icon {
+    transition: transform 0.4s ease;
+}
+.accordion-item.active .accordion-icon {
+    transform: rotate(180deg);
+}

@@ -222,4 +222,24 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = url; // Hard fallback
         }
     }
+
+    // ── Accordion Logic ────────────────────────────────────────
+    document.body.addEventListener('click', e => {
+        const header = e.target.closest('.accordion-header');
+        if (!header) return;
+        
+        const item = header.closest('.accordion-item');
+        const isFAQ = item.closest('#faq'); // if it is FAQ, maybe close others? We'll just toggle for now.
+        
+        // If we want only one open at a time in the same container:
+        const container = item.parentElement;
+        const currentActive = container.querySelector('.accordion-item.active');
+        
+        if (currentActive && currentActive !== item) {
+            currentActive.classList.remove('active');
+        }
+        
+        item.classList.toggle('active');
+    });
+
 });
