@@ -414,10 +414,20 @@ footer {
 .accordion-item {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-radius: 0;
     overflow: hidden;
     backdrop-filter: blur(16px);
+}
+.accordion-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.accordion-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: 1px solid var(--glass-border);
 }
 .accordion-header {
     padding: 1.5rem;
