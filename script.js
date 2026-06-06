@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Re-initialize dynamic components
             initMobileCollapse();
             initReadMoreText();
+            initMarquees();
         } catch (error) {
             console.error('SPA Navigation failed:', error);
             window.location.href = url; // Hard fallback
