@@ -34,19 +34,17 @@ h1, h2, h3, h4 { font-weight: 800; line-height: 1.1; }
 a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
 
 .line-halo {
-    background: rgba(255, 255, 255, 0.85);
-    padding: 0.2rem 0.8rem;
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    
     display: inline;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    
-    line-height: 1.6;
     color: var(--text-main);
-    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    /* Massive text-shadow to create a fuzzy white cloud directly around the words */
+    text-shadow: 
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 1),
+        0 0 30px rgba(255, 255, 255, 0.9),
+        0 0 40px rgba(255, 255, 255, 0.8),
+        0 0 50px rgba(255, 255, 255, 0.7),
+        0 0 60px rgba(255, 255, 255, 0.5);
 }
 
 /* ===========================================================
