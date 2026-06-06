@@ -36,7 +36,21 @@ h1, h2, h3, h4 { font-weight: 800; line-height: 1.15; }
 a { color: var(--cyan); text-decoration: none; transition: all 0.3s ease; }
 a:hover { color: #fff; }
 
-img { max-width: 100%; height: auto; display: block; }
+/* Global Image Skeleton Loader */
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    color: transparent; /* Hides alt text while loading */
+    background: linear-gradient(90deg, rgba(10,22,40,0.8) 25%, rgba(20,40,70,0.8) 50%, rgba(10,22,40,0.8) 75%);
+    background-size: 1000px 100%;
+    animation: shimmer 2s infinite linear;
+}
 
 /* ===========================================================
    NAVIGATION — Rich Header
