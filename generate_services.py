@@ -177,7 +177,7 @@ TEMPLATE = """<!DOCTYPE html>
                 <li class="nav-services-list">
                     <a href="services.html" class="active">Services <span class="desktop-only-arrow">▾</span></a>
                     <div class="dropdown-menu">
-                        <a href="services.html"><strong>All Services</strong></a>
+
                         <a href="service-drain.html">Drain Cleaning</a>
                         <a href="service-tap.html">Tap Repair</a>
                         <a href="service-disposal.html">Waste Disposal</a>
@@ -190,7 +190,7 @@ TEMPLATE = """<!DOCTYPE html>
                         <a href="service-waterheater.html">Water Heaters</a>
                         <a href="service-construction.html">New Construction</a>
                         <a href="service-emergency.html">Emergency Repairs</a>
-                        <a href="services.html" class="mobile-view-all">View All Services &rarr;</a>
+
                     </div>
                 </li>
                 <li><a href="areas.html">Service Areas</a></li>
