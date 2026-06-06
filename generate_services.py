@@ -5,7 +5,7 @@ SERVICES = [
         "id": "drain",
         "title": "Drain Cleaning",
         "desc": "Professional drain cleaning services using advanced high-pressure water jetting to clear stubborn blockages and restore optimal flow. We remove hair, grease, and debris build-up safely without damaging your pipes.",
-        "image": "assets/service-drain.png",
+        "image": "assets/service-drain.webp",
         "features": [
             {"title": "High-Pressure Hydro Jetting", "desc": "Blast away years of grime, grease, and hard water scale with precision jets that leave your pipes spotless and flowing like new."},
             {"title": "Video Camera Inspections", "desc": "We eliminate the guesswork by feeding an HD camera down your lines to visually identify blockages and structural issues before work begins."},
@@ -17,7 +17,7 @@ SERVICES = [
         "id": "tap",
         "title": "Tap Repair",
         "desc": "Stop the annoying drip and reduce your water bill with our expert tap repair and replacement services. We fix leaking faucets, install new fixtures, and ensure everything seals perfectly.",
-        "image": "assets/service-tap.png",
+        "image": "assets/service-tap.webp",
         "features": [
             {"title": "Drip & Leak Repairs", "desc": "We trace the source of that annoying drip and resolve it permanently, saving you money on wasted water and preventing water damage."},
             {"title": "New Fixture Installation", "desc": "Upgrade your kitchen or bathroom aesthetics. We quickly install high-quality faucets with precision so they work flawlessly."},
@@ -29,7 +29,7 @@ SERVICES = [
         "id": "disposal",
         "title": "Waste Disposal",
         "desc": "Garbage disposal repair and installation services. If your disposal is jammed, leaking, or making strange noises, our technicians can get it running smoothly or install a powerful new unit.",
-        "image": "assets/service-disposal.png",
+        "image": "assets/service-disposal.webp",
         "features": [
             {"title": "Jammed Disposal Clearing", "desc": "We safely extract obstructions and reset your disposal without damaging the internal grinding mechanisms."},
             {"title": "New Unit Installation", "desc": "Ready for an upgrade? We install powerful, quiet continuous-feed or batch-feed models tailored to your household's cooking volume."},
@@ -41,7 +41,7 @@ SERVICES = [
         "id": "leak",
         "title": "Leak Detection",
         "desc": "Hidden leaks can cause massive water damage and mold growth. We use state-of-the-art acoustic and thermal imaging technology to pinpoint leaks behind walls, under slabs, or underground without destructive digging.",
-        "image": "assets/service-leak.png",
+        "image": "assets/service-leak.webp",
         "features": [
             {"title": "Non-Destructive Thermal Imaging", "desc": "Our infrared cameras detect temperature anomalies behind walls and ceilings, finding hidden moisture without breaking any drywall."},
             {"title": "Acoustic Leak Pinpointing", "desc": "We use ultra-sensitive listening equipment to hear pressurized water escaping underground, allowing for highly accurate, localized repairs."},
@@ -53,7 +53,7 @@ SERVICES = [
         "id": "repipe",
         "title": "System Repipe",
         "desc": "Upgrade your home's aging plumbing with our comprehensive repiping services. We replace corroded galvanized or polybutylene pipes with durable, modern PEX or copper piping for better water pressure and purity.",
-        "image": "assets/service-pipes.png",
+        "image": "assets/service-pipes.webp",
         "features": [
             {"title": "Whole-Home Repiping", "desc": "A complete, engineered replacement of your failing supply lines, ensuring clean water, great pressure, and zero leaks for decades to come."},
             {"title": "PEX & Copper Upgrades", "desc": "Choose between premium copper for proven longevity or flexible PEX for cost-effective, freeze-resistant durability."},
@@ -65,7 +65,7 @@ SERVICES = [
         "id": "outdoor",
         "title": "Outdoor Plumbing",
         "desc": "From outdoor hose bibbs to sprinkler system feed lines, we handle all exterior plumbing needs. Ensure your outdoor kitchen, pool house, or garden supply lines are winter-ready and leak-free.",
-        "image": "assets/service-outdoor.png",
+        "image": "assets/service-outdoor.webp",
         "features": [
             {"title": "Hose Bibb Replacement", "desc": "We swap out leaky, stubborn outdoor spigots with durable, frost-proof sillcocks that stand up to the elements."},
             {"title": "Outdoor Kitchen Plumbing", "desc": "Custom gas and water line installations for outdoor sinks, grills, and bars, built safely to local codes."},
@@ -77,7 +77,7 @@ SERVICES = [
         "id": "sewer",
         "title": "Sewer Cleaning",
         "desc": "Main sewer line blockages require heavy-duty solutions. We provide rooter services, trenchless sewer repair, and thorough cleanouts to prevent hazardous sewage backups into your home.",
-        "image": "assets/service-sewer.png",
+        "image": "assets/service-sewer.webp",
         "features": [
             {"title": "Tree Root Removal", "desc": "We use heavy-duty cutting blades to clear aggressive tree roots that have infiltrated and choked your main sewer line."},
             {"title": "Trenchless Repair Options", "desc": "We can patch or line damaged sewer pipes from the inside out, saving your lawn and driveway from expensive excavation."},
@@ -89,7 +89,7 @@ SERVICES = [
         "id": "sump",
         "title": "Sump Pumps",
         "desc": "Protect your basement from flooding with a reliable sump pump system. We offer installation, maintenance, and battery backup solutions to keep your home dry during the heaviest storms.",
-        "image": "assets/service-sump.png",
+        "image": "assets/service-sump.webp",
         "features": [
             {"title": "Primary Pump Installation", "desc": "We size and install robust, high-capacity submersible pumps capable of handling heavy groundwater intrusion."},
             {"title": "Battery Backup Systems", "desc": "Don’t lose protection during a power outage. Our backup systems automatically take over when the grid fails during major storms."},
@@ -101,7 +101,7 @@ SERVICES = [
         "id": "toilet",
         "title": "Shower & Toilet",
         "desc": "Complete bathroom plumbing services. Whether your toilet is constantly running, or you need a brand new shower valve installed during a renovation, our experts deliver flawless results.",
-        "image": "assets/service-toilet.png",
+        "image": "assets/service-toilet.webp",
         "features": [
             {"title": "Running Toilet Repair", "desc": "We replace worn flappers, fill valves, and seals to stop the phantom flushing and save thousands of gallons of water."},
             {"title": "Shower Valve Replacement", "desc": "Upgrading to a new thermostatic mixing valve for perfect temperature control and improved shower water pressure."},
@@ -113,7 +113,7 @@ SERVICES = [
         "id": "waterheater",
         "title": "Water Heaters",
         "desc": "Never run out of hot water again. We repair all models and install high-efficiency tankless and traditional tank water heaters tailored to your family's specific hot water demands.",
-        "image": "assets/service-waterheater.png",
+        "image": "assets/service-waterheater.webp",
         "features": [
             {"title": "Tankless Upgrades", "desc": "Enjoy endless hot water and lower energy bills with a space-saving, on-demand tankless water heating system."},
             {"title": "Traditional Tank Replacements", "desc": "We install high-recovery gas and electric tank water heaters quickly so you aren't left in the cold."},
@@ -125,7 +125,7 @@ SERVICES = [
         "id": "construction",
         "title": "New Construction",
         "desc": "Partner with us for your new home build or major addition. We design and install complete plumbing systems from the ground up, ensuring code compliance, efficiency, and long-lasting quality.",
-        "image": "assets/service-construction.png",
+        "image": "assets/service-construction.webp",
         "features": [
             {"title": "System Design & Layout", "desc": "We engineer efficient drain and supply plans that optimize water flow and minimize future maintenance issues."},
             {"title": "Code Compliance", "desc": "Our master plumbers ensure every pipe, vent, and trap meets or exceeds stringent local and state building codes."},
@@ -137,7 +137,7 @@ SERVICES = [
         "id": "emergency",
         "title": "Emergency Repairs",
         "desc": "Plumbing disasters don't wait for business hours. Our 24/7 emergency response team is always on standby to tackle burst pipes, major floods, and critical system failures immediately.",
-        "image": "assets/service-emergency.png",
+        "image": "assets/service-emergency.webp",
         "features": [
             {"title": "24/7 Rapid Response", "desc": "When disaster strikes at 2 AM, our dispatched trucks arrive quickly to stop the water and secure your property."},
             {"title": "Burst Pipe Isolation", "desc": "We quickly locate the break, shut down the localized water supply, and perform immediate repairs to minimize structural damage."},
@@ -261,7 +261,7 @@ TEMPLATE = """<!DOCTYPE html>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Quick Links</h4>
+                <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -272,7 +272,7 @@ TEMPLATE = """<!DOCTYPE html>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Services</h4>
+                <h3>Services</h3>
                 <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
                     <li><a href="service-drain.html">Drain Cleaning</a></li>
                     <li><a href="service-tap.html">Tap Repair</a></li>
@@ -316,7 +316,7 @@ TEMPLATE = """<!DOCTYPE html>
                 <input type="text" placeholder="Full Name" required>
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
-                <select id="modal-service" required>
+                <select id="modal-service" aria-label="Select a service" required>
                     <option value="" disabled selected>Select Service Needed</option>
                     <option value="emergency">Emergency Repair</option>
                     <option value="repiping">Whole-Home Repiping</option>
