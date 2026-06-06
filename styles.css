@@ -108,9 +108,8 @@ a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
     align-items: center;
     padding: 1.5rem 5%;
     z-index: 100;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 100%);
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent, var(--primary), transparent) 1;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+    border-bottom: none;
 }
 
 .logo-text {
@@ -319,12 +318,11 @@ section { padding: 3rem 5%; }
 footer {
     padding: 4rem 5% 2rem;
     text-align: center;
-    background: var(--bg-color);
+    background: linear-gradient(to top, var(--bg-color) 40%, transparent 100%);
     position: relative;
     z-index: 10;
     margin-top: auto;
-    border-top: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent, var(--primary), transparent) 1;
+    border-top: none;
 }
 .footer-content { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem; align-items: center; }
 .footer-copy { color: var(--text-muted); font-size: 0.9rem; line-height: 1.7; }
