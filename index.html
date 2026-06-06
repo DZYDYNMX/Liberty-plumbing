@@ -5,295 +5,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberty Plumbing | Premium Emergency & Residential Services</title>
     <meta name="description" content="Liberty Plumbing provides luxury, 24/7 emergency plumbing, repiping, and water heater services. Reliable, clean, and professional.">
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
     <link rel="canonical" href="https://liberty-plumbing-example.com/">
+    <link rel="icon" href="data:,">
+    <meta property="og:title" content="Liberty Plumbing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liberty-plumbing-example.com/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Liberty Plumbing",
+      "image": "https://liberty-plumbing-example.com/assets/logo.png",
+      "@id": "https://liberty-plumbing-example.com/",
+      "url": "https://liberty-plumbing-example.com/",
+      "telephone": "+19367552836",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Plumbing Way",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77001",
+        "addressCountry": "US"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="bg-container">
-        <img src="assets/blue-plumbing-1.png" alt="Luxury Bathroom Sink" id="bg-image">
-        <div class="overlay"></div>
-    </div>
-
-    <div class="mask-top"></div>
-    <div class="mask-bottom"></div>
-
-    <nav class="navbar">
-        <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
-        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Overview</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="nav-main">
+            <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Overview</a></li>
+                <li class="nav-services-list">
+                    <a href="services.html">Services <span class="desktop-only-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html"><strong>All Services</strong></a>
+                        <a href="service-drain.html">Drain Cleaning</a>
+                        <a href="service-tap.html">Tap Repair</a>
+                        <a href="service-disposal.html">Waste Disposal</a>
+                        <a href="service-leak.html">Leak Detection</a>
+                        <a href="service-repipe.html">System Repipe</a>
+                        <a href="service-outdoor.html">Outdoor Plumbing</a>
+                        <a href="service-sewer.html">Sewer Cleaning</a>
+                        <a href="service-sump.html">Sump Pumps</a>
+                        <a href="service-toilet.html">Shower & Toilet</a>
+                        <a href="service-waterheater.html">Water Heaters</a>
+                        <a href="service-construction.html">New Construction</a>
+                        <a href="service-emergency.html">Emergency Repairs</a>
+                        <a href="services.html" class="mobile-view-all">View All Services &rarr;</a>
+                    </div>
+                </li>
+                <li><a href="areas.html">Service Areas</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
+            </ul>
+        </div>
+    </header>
 
     <main class="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title"><span class="line-halo">Flow Restored.<br>Stress <span class="hero-accent">Relieved.</span></span></h1>
-                <p class="hero-sub"><span class="line-halo">Premium residential plumbing, 24/7 emergency response, and expert repiping delivered with white-glove service.</span></p>
-                <div class="hero-actions">
-                    <a href="tel:5550198" class="cta-button">Call Emergency Service</a>
-                    <a href="services.html" class="cta-button outline">View Our Services</a>
+        <!-- HERO -->
+        <section class="hero" style="background-image: url('assets/hero-plumber.png');">
+            <div class="hero-inner fade-in">
+                <div class="hero-text">
+                    <h1>Don't Delay, Get Your Quote Today!</h1>
+                    <p>For a trusted local plumber, simply fill out our booking form. Our friendly team is always here to offer the help you need. Providing upfront quotes with no hidden fees!</p>
+                    <div class="hero-phone-cta" style="margin-top: 1.5rem;">
+                        <a href="tel:+19367552836" class="btn btn-cyan" style="font-size: 1.15rem; padding: 1rem 1.5rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            Call (936) 755-2836
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-form">
+                    <h2>Book Online Now</h2>
+                    <p class="form-sub">Simply complete the form below & we'll get back to you as soon as possible</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-grid">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
+                            <input type="text" placeholder="Suburb" required>
+                            <select class="full-width" required>
+                                <option value="" disabled selected>Service Required</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="drain">Blocked Drain</option>
+                                <option value="water_heater">Hot Water</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <textarea class="full-width" placeholder="Optional: How can we help you? (Provide any plumbing problems & details here)" rows="4"></textarea>
+                            <button type="submit">Book Online Today</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- Our Services Preview -->
-        <section class="overview-section" style="padding-top: 2rem;">
-            <div class="title-wrapper">
-                <h2 class="section-title"><span class="line-halo">Comprehensive Plumbing Solutions</span></h2>
-            </div>
-            <div class="grid-container">
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Emergency Repairs</h3>
-                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Burst pipes, overflowing toilets, and major leaks handled immediately, 24/7.</p>
-                    <a href="tel:5550198" class="cta-button outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Get Help Now</a>
+        <!-- HOW IT WORKS -->
+        <section class="section section-light">
+            <div class="container fade-in">
+                <div class="section-header center">
+                    <div class="label">Simple Process</div>
+                    <h2>How It Works</h2>
                 </div>
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Whole-Home Repiping</h3>
-                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Replace old galvanized or polybutylene pipes with modern, durable PEX or copper.</p>
-                    <button class="cta-button outline contact-btn" data-service="repiping" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Request Quote</button>
-                </div>
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Water Heaters</h3>
-                    <p style="color:var(--text-muted); margin-bottom: 1.5rem;">Installation and repair of traditional tank and modern tankless water heating systems.</p>
-                    <button class="cta-button outline contact-btn" data-service="water_heater" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Schedule Service</button>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="services.html" class="cta-button">See All Services</a>
-            </div>
-        </section>
-
-        <!-- Service Areas Grid -->
-        <section id="areas" class="overview-section">
-            <div class="title-wrapper">
-                <h2 class="section-title"><span class="line-halo">Areas We Serve</span></h2>
-                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">Select your city for targeted local plumbing services.</span></p>
-            </div>
-            
-            <div class="grid-container" style="grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto;">
-                <a href="area-bellaire.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Bellaire</h3></a>
-                <a href="area-brazoria.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Brazoria</h3></a>
-                <a href="area-brookshire.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Brookshire</h3></a>
-                <a href="area-cleveland.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Cleveland</h3></a>
-                <a href="area-conroe.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Conroe</h3></a>
-                <a href="area-cypress.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Cypress</h3></a>
-                <a href="area-fort-bend.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Fort Bend</h3></a>
-                <a href="area-galveston.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Galveston</h3></a>
-                <a href="area-houston.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Houston</h3></a>
-                <a href="area-jersey-village.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Jersey Village</h3></a>
-                <a href="area-katy.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Katy</h3></a>
-                <a href="area-liberty.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Liberty</h3></a>
-                <a href="area-magnolia.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Magnolia</h3></a>
-                <a href="area-missouri-city.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Missouri City</h3></a>
-                <a href="area-montgomery.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Montgomery</h3></a>
-                <a href="area-richmond.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Richmond</h3></a>
-                <a href="area-splendora.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Splendora</h3></a>
-                <a href="area-spring.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Spring</h3></a>
-                <a href="area-sugar-land.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Sugar Land</h3></a>
-                <a href="area-tomball.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Tomball</h3></a>
-                <a href="area-waller.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Waller</h3></a>
-                <a href="area-willis.html" class="glass-card" style="padding: 1.5rem 1rem; text-decoration: none; transition: transform 0.2s; text-align: center;"><h3 style="color:var(--primary); font-size:1.1rem; margin:0;">Willis</h3></a>
-            </div>
-        </section>
-
-        <!-- Why Choose Us -->
-        <section class="overview-section">
-            <div class="title-wrapper">
-                <h2 class="section-title"><span class="line-halo">Why Choose Liberty?</span></h2>
-            </div>
-            <div class="grid-container">
-                <div class="glass-card">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">24/7 Availability</h3>
-                    <p style="color:var(--text-muted);">Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock to secure your home.</p>
-                </div>
-                <div class="glass-card">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Clean Workspaces</h3>
-                    <p style="color:var(--text-muted);">We treat your home like a sanctuary. Boot covers, drop cloths, and a spotless cleanup are guaranteed on every single job.</p>
-                </div>
-                <div class="glass-card">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Upfront Pricing</h3>
-                    <p style="color:var(--text-muted);">No hidden fees. No surprise charges. We diagnose the issue and provide a clear, firm quote before any wrenches are turned.</p>
+                <div class="features-grid staggered">
+                    <div class="glow-card">
+                        <div class="watermark-number">01</div>
+                        <h3>Request Service</h3>
+                        <p>Call us or fill out our online form to schedule an appointment.</p>
+                    </div>
+                    <div class="glow-card">
+                        <div class="watermark-number">02</div>
+                        <h3>Get a Quote</h3>
+                        <p>We assess the issue and provide a clear, upfront estimate.</p>
+                    </div>
+                    <div class="glow-card">
+                        <div class="watermark-number">03</div>
+                        <h3>Problem Solved</h3>
+                        <p>Our experts fix the problem efficiently, leaving the workspace clean.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials (Carousel) -->
-        <section class="overview-section">
-            <div class="title-wrapper">
-                <h2 class="section-title"><span class="line-halo">What Our Clients Say</span></h2>
-            </div>
-            
-            <div class="carousel-wrapper">
-                <div class="carousel-track" id="review-track">
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"We had a shower bathtub overhaul done in 2 weeks with good planning by Liberty Plumbing. Highly highly recommended. They do great work and backup their work and follow up on whatever is needed."</p>
-                            <span class="reviewer">— Kini Tran</span>
-                        </div>
+        <!-- EMERGENCY SPLIT -->
+        <section class="section section-dark">
+            <div class="emergency-split fade-in">
+                <div class="emergency-text">
+                    <h2 style="margin-top: 1rem;">Providing 24/7 Emergency Help</h2>
+                    <div class="emergency-image desktop-hidden" style="margin-bottom: 1.5rem; border-radius: var(--radius-lg); overflow: hidden;">
+                        <img src="assets/service-emergency.png" alt="Emergency Plumber" style="width: 100%; display: block;">
                     </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"I highly recommend Liberty Plumbing! I called Justin in a pinch, and he had a technician out there same-day. Zach was super professional, and had my water heaters fixed within minutes."</p>
-                            <span class="reviewer">— Dillon Farr</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Awesome service and work, very polite and helpful. Not one of those companies that are just out for your money! Have any plumbing issues, Liberty Plumbing is the one to call!!"</p>
-                            <span class="reviewer">— Zach Dunn</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Contacted Liberty Plumbing about a gas leak, even though it was after hours they assured me they would have one of their technicians out the next day. Fixed the problem within a few minutes."</p>
-                            <span class="reviewer">— Britney Moody</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Great communication with my project. Highly recommend, prices were perfect for my budget! Thanks Floyd"</p>
-                            <span class="reviewer">— Mike DeFrance</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Justin and his entire team have been nothing but professional, knowledgeable, and punctual. Very good communication with this contractor. I was made aware of all costs beforehand."</p>
-                            <span class="reviewer">— Suzan Foster</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"After a toilet catastrophe... they responded immediately and handled everything with incredible skill and professionalism. They replaced the toilet quickly and turned a disaster into a stress-free fix."</p>
-                            <span class="reviewer">— Kim Perez</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Liberty Plumbing is the best. Justin and his team did an awesome job replacing my water heater (IN THE ATTIC) with no problem. They were fast and very professional."</p>
-                            <span class="reviewer">— Daniel Coborn</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"BEST in the business! I had 2 Hot Water Heaters at separate locations start leaking, Liberty Plumbing stepped up and bailed us out. FAST response, outstanding professionalism."</p>
-                            <span class="reviewer">— Texas Marine-0411</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Justin you ROCK!! You and your guys are Awesome and really took care of my grandparents and I can't thank you enough. I would HIGHLY RECOMMEND Liberty Plumbing to anyone."</p>
-                            <span class="reviewer">— Lacy Feller</span>
-                        </div>
-                    </div>
-                    <div class="carousel-slide">
-                        <div class="glass-card review-card">
-                            <div class="stars">★★★★★</div>
-                            <p class="review-text">"Absolutely top-notch! They responded incredibly fast... It’s rare to find a company that combines quick response times with such high-quality service. Highly recommend them!"</p>
-                            <span class="reviewer">— Sharon Anderson</span>
-                        </div>
+                    <p style="margin-bottom: 1.5rem;">Plumbing emergencies can strike at any time. With every second that passes, you risk more damage occurring to your home or office. Instead, opt for our 24 hour emergency plumber services.</p>
+                    <p style="margin-bottom: 2rem;">Our vehicles are fully equipped 24/7. This means that we don't delay our response time, providing a fast arrival! We'll get to work in diagnosing and resolving the problem. Leaving you with the comfort knowing that your plumbing is in the right hands. <strong>Remember that our plumbers are a call away.</strong></p>
+                    <div class="btn-group">
+                        <a href="tel:+19367552836" class="btn btn-cyan">(936) 755-2836</a>
+                        <button class="btn btn-outline contact-btn">Get a Quote</button>
                     </div>
                 </div>
-                <div class="carousel-nav">
-                    <button class="carousel-btn" id="prev-btn" aria-label="Previous Reviews">❮</button>
-                    <button class="carousel-btn" id="next-btn" aria-label="Next Reviews">❯</button>
+                <div class="emergency-image mobile-hidden">
+                    <img src="assets/service-emergency.png" alt="Emergency Plumber">
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Accordion -->
-        <section id="faq" class="overview-section" style="padding-top: 2rem;">
-            <div class="title-wrapper">
-                <h2 class="section-title"><span class="line-halo">General Plumbing FAQs</span></h2>
-                <p class="hero-sub" style="margin-top: 1rem;"><span class="line-halo">Expert answers to common emergency plumbing questions.</span></p>
+        <!-- SERVICES PREVIEW GRID -->
+        <section class="section section-mid">
+            <div class="container fade-in">
+                <div class="section-header center">
+                    <div class="label">Comprehensive Solutions</div>
+                    <h2>Popular Services</h2>
+                </div>
+                <div class="marquee-container" data-marquee>
+                    <div class="marquee-track">
+                        <a href="service-emergency.html" class="btn btn-outline marquee-item" style="border-color: #ef4444;">Emergency Repair</a>
+                        <a href="service-drain.html" class="btn btn-outline marquee-item">Drain Cleaning</a>
+                        <a href="service-waterheater.html" class="btn btn-outline marquee-item">Water Heaters</a>
+                        <a href="service-leak.html" class="btn btn-outline marquee-item">Leak Detection</a>
+                        <a href="service-sewer.html" class="btn btn-outline marquee-item">Sewer Cleaning</a>
+                        <a href="service-repipe.html" class="btn btn-outline marquee-item">System Repipe</a>
+                        <a href="service-toilet.html" class="btn btn-outline marquee-item">Shower & Toilet</a>
+                        <a href="service-tap.html" class="btn btn-outline marquee-item">Tap Installation</a>
+                        <a href="service-disposal.html" class="btn btn-outline marquee-item">Waste Disposal</a>
+                        <a href="service-outdoor.html" class="btn btn-outline marquee-item">Outdoor Plumbing</a>
+                        <a href="service-sump.html" class="btn btn-outline marquee-item">Sump Pumps</a>
+                        <a href="service-construction.html" class="btn btn-outline marquee-item">New Construction</a>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="services.html" class="btn btn-cyan">View All Services</a>
+                </div>
             </div>
-            <div class="grid-container" style="max-width: 900px; grid-template-columns: 1fr;">
-                
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>What should I do immediately if a pipe bursts in my house?</span>
-                        <span class="accordion-icon">▼</span>
+        </section>
+
+        <!-- WHY CHOOSE US -->
+        <section class="section section-dark">
+            <div class="container fade-in">
+                <div class="section-header center">
+                    <div class="label">The Liberty Standard</div>
+                    <h2>Why Choose Us?</h2>
+                </div>
+                <div class="features-grid staggered">
+                    <div class="glow-card">
+                        <h3>24/7 Availability</h3>
+                        <p>Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock.</p>
                     </div>
-                    <div class="accordion-content">
-                        <p>The absolute first thing you must do is locate your main water shut-off valve and turn it off to stop the flooding. This valve is typically located near your water meter at the street, in your garage, or on an exterior wall. Once the water is off, open your faucets to drain the remaining water in the lines, and then call our 24/7 emergency dispatch immediately.</p>
+                    <div class="glow-card">
+                        <h3>Clean Workspaces</h3>
+                        <p>Boot covers, drop cloths, and a spotless cleanup are guaranteed on every single job.</p>
+                    </div>
+                    <div class="glow-card">
+                        <h3>Upfront Pricing</h3>
+                        <p>No hidden fees. We diagnose the issue and provide a clear quote before any wrenches are turned.</p>
                     </div>
                 </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>How do I know if my underground main sewer line is collapsed or just clogged?</span>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <p>If multiple drains in your home are backing up simultaneously, the issue is in the main line. A simple clog can usually be cleared with professional hydro-jetting. However, if the line repeatedly clogs shortly after being cleared, or if you notice sinkholes in your yard, the pipe may have collapsed due to root intrusion. We use high-definition sewer cameras to confirm the exact cause without guessing.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>Why does my toilet constantly run, and how much is it costing me?</span>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <p>A constantly running toilet is usually caused by a deteriorated flapper valve, an improperly adjusted float, or a faulty fill valve. While it sounds like a minor annoyance, a continuously running toilet can waste up to 200 gallons of water per day, easily adding $50 to $100+ to your monthly water bill.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>What are the signs of a hidden slab leak?</span>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Slab leaks occur when a pressurized water line running under your home's concrete foundation bursts. Key signs include: a sudden unexplained spike in your water bill, the sound of running water when all fixtures are off, unexplained warm spots on your floor, damp carpets, or low water pressure. We deploy advanced acoustic leak detection equipment to pinpoint the exact location.</p>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <span>Is it safe to use chemical drain cleaners from the hardware store?</span>
-                        <span class="accordion-icon">▼</span>
-                    </div>
-                    <div class="accordion-content">
-                        <p>We strongly advise against using harsh chemical drain cleaners. These chemicals rely on caustic reactions that generate intense heat to melt clogs. In older homes, this heat can permanently warp, crack, or corrode the pipes, turning a simple $150 clog removal into a $2,000 repiping job.</p>
-                    </div>
-                </div>
-
             </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <h3 style="color:#fff; font-size: 1.5rem; margin-bottom: 1.5rem;">Still have questions or facing an emergency?</h3>
-                <a href="tel:5550198" class="cta-button" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Call Liberty Plumbing Now</a>
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="section section-mid">
+            <div class="reviews-split container fade-in">
+                <div class="reviews-intro">
+                    <h2>Our Satisfaction Guarantee</h2>
+                    <p>At Liberty Plumbing, we value the importance of plumbing that leaves you with peace of mind. Which means that we share a promise to leaving you feeling happy with the service. This is reflected through our 100% satisfaction guarantee.</p>
+                    <p style="margin-bottom: 2rem;">From the start to finish, we'll make sure to work closely alongside you. If any questions or concerns are raised, these will be addressed.</p>
+                    <div class="btn-group" style="flex-wrap: wrap;">
+                        <a href="tel:+19367552836" class="btn btn-cyan">(936) 755-2836</a>
+                        <button class="btn btn-outline contact-btn">Get a Quote</button>
+                        <a href="https://maps.app.goo.gl/vxtPHzGMrj5JPKM39" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%; justify-content: center; margin-top: 0.5rem;">Leave a Google Review ★★★★★</a>
+                    </div>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar purple">S</div>
+                            <div>
+                                <div class="review-name">Suzan Foster</div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Justin and his entire team have been nothing but professional, knowledgeable, and punctual. They say what they’re going to do and complete the task with confidence. Very good communication with this contractor. I was made aware of all costs and details beforehand. I would definitely feel comfortable referring anyone to use this company. Five star rating all the way.</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar teal">D</div>
+                            <div>
+                                <div class="review-name">Dillon Farr</div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">I highly recommend Liberty Plumbing! I called Justin in a pinch, and he had a technician out there same-day. Zach was super professional, and had my water heaters fixed within minutes. Fast, professional and reliable service!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar red">Z</div>
+                            <div>
+                                <div class="review-name">Zach Dunn</div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Awesome service and work, very polite and helpful. Not one of those companies that are just out for your money! Have any plumbing issues, Liberty Plumbing is the one to call!!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar cyan">B</div>
+                            <div>
+                                <div class="review-name">Britney Moody</div>
+                                <div class="review-stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Contacted Liberty Plumbing about a gas leak, even though it was after hours they assured me they would have one of their technicians out the next day. They arrived and fixed the problem within a few minutes. When it comes to gas or electric I will always leave it to the professionals!! HIGHLY RECOMMENDED</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICE AREAS -->
+        <section id="areas" class="section section-dark">
+            <div class="container fade-in">
+                <div class="section-header center">
+                    <div class="label">Local Expertise</div>
+                    <h2>Areas We Serve</h2>
+                    <p>Select your city for targeted local plumbing services.</p>
+                </div>
+                <div class="marquee-container" data-marquee>
+                    <div class="marquee-track">
+                        <a href="area-bellaire.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Bellaire</a>
+                        <a href="area-brazoria.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Brazoria</a>
+                        <a href="area-brookshire.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Brookshire</a>
+                        <a href="area-cleveland.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Cleveland</a>
+                        <a href="area-conroe.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Conroe</a>
+                        <a href="area-cypress.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Cypress</a>
+                        <a href="area-fort-bend.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Fort Bend</a>
+                        <a href="area-galveston.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Galveston</a>
+                        <a href="area-houston.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Houston</a>
+                        <a href="area-jersey-village.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Jersey Village</a>
+                        <a href="area-katy.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Katy</a>
+                        <a href="area-liberty.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Liberty</a>
+                        <a href="area-magnolia.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Magnolia</a>
+                        <a href="area-missouri-city.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Missouri City</a>
+                        <a href="area-montgomery.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Montgomery</a>
+                        <a href="area-richmond.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Richmond</a>
+                        <a href="area-splendora.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Splendora</a>
+                        <a href="area-spring.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Spring</a>
+                        <a href="area-sugar-land.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Sugar Land</a>
+                        <a href="area-tomball.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Tomball</a>
+                        <a href="area-waller.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Waller</a>
+                        <a href="area-willis.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Willis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section section-mid">
+            <div class="container fade-in">
+                <div class="section-header center">
+                    <div class="label">Knowledge Base</div>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>What should I do immediately if a pipe bursts in my house?</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>The absolute first thing you must do is locate your main water shut-off valve and turn it off to stop the flooding. This valve is typically located near your water meter at the street, in your garage, or on an exterior wall. Once the water is off, open your faucets to drain the remaining water in the lines, and then call our 24/7 emergency dispatch immediately.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>How do I know if my underground main sewer line is collapsed or just clogged?</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>If multiple drains in your home are backing up simultaneously, the issue is in the main line. A simple clog can usually be cleared with professional hydro-jetting. However, if the line repeatedly clogs shortly after being cleared, or if you notice sinkholes in your yard, the pipe may have collapsed due to root intrusion. We use high-definition sewer cameras to confirm the exact cause without guessing.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>Why does my toilet constantly run, and how much is it costing me?</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>A constantly running toilet is usually caused by a deteriorated flapper valve, an improperly adjusted float, or a faulty fill valve. While it sounds like a minor annoyance, a continuously running toilet can waste up to 200 gallons of water per day, easily adding $50 to $100+ to your monthly water bill.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <span>What are the signs of a hidden slab leak?</span>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Slab leaks occur when a pressurized water line running under your home's concrete foundation bursts. Key signs include: a sudden unexplained spike in your water bill, the sound of running water when all fixtures are off, unexplained warm spots on your floor, damp carpets, or low water pressure. We deploy advanced acoustic leak detection equipment to pinpoint the exact location.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
-            <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
-            <div style="margin-top: 1rem;">
-                <a href="#areas" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
-                <a href="faq.html" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
-                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo-text" style="display:inline-block; margin-bottom:1rem;">Liberty <span>Plumbing</span></a>
+                <p>For a trusted local plumber, simply fill out our booking form. Our friendly team is always here to offer the help you need. Providing upfront quotes with no hidden fees!</p>
+                <div class="nav-social" style="margin-top: 1rem;">
+                    <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19C21.36 6.35 20.71 5.7 19.87 5.48C18.36 5.08 12 5.08 12 5.08C12 5.08 5.64 5.08 4.13 5.48C3.29 5.7 2.64 6.35 2.42 7.19C2 8.7 2 12 2 12C2 12 2 15.3 2.42 16.81C2.64 17.65 3.29 18.3 4.13 18.52C5.64 18.92 12 18.92 12 18.92C12 18.92 18.36 18.92 19.87 18.52C20.71 18.3 21.36 17.65 21.58 16.81C22 15.3 22 12 22 12C22 12 22 8.7 21.58 7.19ZM9.98 15.17V8.83L15.48 12L9.98 15.17Z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="#" class="contact-btn">Contact Us</a></li>
+                    <li><a href="https://maps.app.goo.gl/vxtPHzGMrj5JPKM39" target="_blank" rel="noopener">Google Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="service-drain.html">Drain Cleaning</a></li>
+                    <li><a href="service-repipe.html">Repiping</a></li>
+                    <li><a href="service-waterheater.html">Water Heaters</a></li>
+                    <li><a href="service-leak.html">Leak Detection</a></li>
+                    <li><a href="service-sewer.html">Sewer Repair</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Phone:</strong> <a href="tel:+19367552836">(936) 755-2836</a></li>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Email:</strong> <a href="mailto:info@libertyplumbing.com" style="color:var(--muted); text-decoration:none;">info@libertyplumbing.com</a></li>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Hours:</strong> 24/7 Emergency Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Liberty Plumbing. All Rights Reserved. Licensed & Insured.</p>
+            <div class="footer-legal">
+                <a href="toc.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
         </div>
     </footer>
@@ -302,9 +410,9 @@
     <div class="modal-overlay" id="contact-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
-            <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
-            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--primary); font-weight: bold;">(555) 019-8123</a>.</p>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
+            <h2>Request Service</h2>
+            <p style="color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem;">Fill out the form below or call us directly at <a href="tel:+19367552836" class="text-cyan">(936) 755-2836</a>.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
                 <input type="text" placeholder="Full Name" required>
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
@@ -317,11 +425,11 @@
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
-                <button type="submit" class="cta-button">Submit Request</button>
+                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

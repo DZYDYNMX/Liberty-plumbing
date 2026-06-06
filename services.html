@@ -5,117 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberty Plumbing | Comprehensive Plumbing Services & Repair</title>
     <meta name="description" content="Expert plumbing services including drain cleaning, tap installation, waste disposal repair, leak detection, sewer cleaning, water heater installation, and system repiping.">
-    <meta name="keywords" content="drain cleaning, tap installation, tap repair, waste disposal installation and repair, outdoor plumbing system repair, plumbing leak detection and repair, plumbing pipe repair, sewer cleaning, sewer repair, shower installation, shower repair, sump pump installation, toilet installation, water heater installation and repair, heater repair and replacement, leaking pipes, new construction plumbing, system repipe">
-    <link rel="stylesheet" href="styles.css?v=12">
+    <link rel="stylesheet" href="styles.css?v=13">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
-    <link rel="canonical" href="https://liberty-plumbing-example.com/services.html">
+    <link rel="icon" href="data:,">
+    <meta property="og:title" content="Liberty Plumbing">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://liberty-plumbing-example.com/">
 </head>
 <body>
-    <div class="bg-container">
-        <img src="assets/blue-plumbing-2.png" alt="Copper pipes" id="bg-image">
-        <div class="overlay"></div>
-    </div>
-
-    <div class="mask-top"></div>
-    <div class="mask-bottom"></div>
-
-    <nav class="navbar">
-        <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
-        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html">Overview</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><button class="nav-cta contact-btn" style="border:none; cursor:pointer; font-family:inherit; font-size:inherit;">Contact</button></li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="nav-main">
+            <a href="index.html" class="logo-text">Liberty <span>Plumbing</span></a>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Overview</a></li>
+                <li>
+                    <a href="services.html" class="active">Services <span class="desktop-only-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="services.html"><strong>All Services</strong></a>
+                        <a href="service-drain.html">Drain Cleaning</a>
+                        <a href="service-tap.html">Tap Repair</a>
+                        <a href="service-disposal.html">Waste Disposal</a>
+                        <a href="service-leak.html">Leak Detection</a>
+                        <a href="service-repipe.html">System Repipe</a>
+                        <a href="service-outdoor.html">Outdoor Plumbing</a>
+                        <a href="service-sewer.html">Sewer Cleaning</a>
+                        <a href="service-sump.html">Sump Pumps</a>
+                        <a href="service-toilet.html">Shower & Toilet</a>
+                        <a href="service-waterheater.html">Water Heaters</a>
+                        <a href="service-construction.html">New Construction</a>
+                        <a href="service-emergency.html">Emergency Repairs</a>
+                    </div>
+                </li>
+                <li><a href="areas.html">Service Areas</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
+            </ul>
+        </div>
+    </header>
 
     <main class="main-content">
-        <section class="overview-section" style="padding-top: 5vh;">
-            <div class="title-wrapper">
-                <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem);"><span class="line-halo">Comprehensive<br><span class="hero-accent">Plumbing Solutions.</span></span></h1>
-                <p class="hero-sub" style="margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto;"><span class="line-halo">A full spectrum of residential and commercial plumbing services, designed for maximum reliability and organic longevity.</span></p>
+        <section class="hero" style="background-image: url('assets/hero-plumber.png');">
+            <div class="hero-inner fade-in">
+                <div class="hero-text">
+                    <h1>Comprehensive Plumbing Services</h1>
+                    <div class="label" style="background: rgba(255,255,255,0.2); color: white;">Expert Solutions</div>
+                    <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">A full spectrum of residential and commercial plumbing services, designed for maximum reliability and organic longevity. From emergency response to new installations, we've got you covered.</p>
+                </div>
             </div>
-            
-            <div class="grid-container" style="max-width: 1200px;">
-                
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Drain Cleaning</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">We provide routine and emergency drain cleaning to ensure your lines remain clear. From stubborn kitchen sink clogs to main line blockages, our hydro-jetting and snaking services restore perfect flow.</p>
+        </section>
+
+        <section class="section section-mid">
+            <div class="container fade-in">
+                <div class="section-header center" style="margin-bottom: 2rem;">
+                    <h2>Our Plumbing Services</h2>
+                </div>
+                <div class="services-grid mobile-collapse" data-collapse-limit="4">
+                    
+                    <a href="service-drain.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-drain.png" alt="Drain Cleaning">
+                        <div class="service-card-overlay">
+                            <h3>Drain Cleaning</h3>
+                            <p>We provide routine and emergency drain cleaning to ensure your lines remain clear. From stubborn kitchen sink clogs to main line blockages, our hydro-jetting and snaking services restore perfect flow.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-tap.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-tap.png" alt="Tap Installation">
+                        <div class="service-card-overlay">
+                            <h3>Tap Installation & Repair</h3>
+                            <p>Precision tap installation and rapid repair to keep your kitchen and bathroom fixtures functioning flawlessly. We fix annoying drips and install premium modern fixtures.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-disposal.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-disposal.png" alt="Waste Disposal">
+                        <div class="service-card-overlay">
+                            <h3>Waste Disposal</h3>
+                            <p>For efficient and safe waste disposal unit repairs and installations, we ensure your kitchen systems run smoothly without jams or unexpected failures.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-leak.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-leak.png" alt="Leak Detection">
+                        <div class="service-card-overlay">
+                            <h3>Leak Detection</h3>
+                            <p>Utilizing state-of-the-art leak detection technology, our specialists pinpoint hidden leaks behind walls or under slabs to prevent extensive water damage before it occurs.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-repipe.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-pipes.png" alt="System Repipe">
+                        <div class="service-card-overlay">
+                            <h3>System Repipe</h3>
+                            <p>When infrastructure is too compromised, we offer complete system repipe solutions utilizing modern, highly durable materials like PEX and copper.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-outdoor.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-outdoor.png" alt="Outdoor Plumbing">
+                        <div class="service-card-overlay">
+                            <h3>Outdoor Plumbing</h3>
+                            <p>Our outdoor plumbing system repair ensures that your irrigation lines, outdoor faucets, and external drainage systems operate perfectly regardless of the season.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-sewer.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-sewer.png" alt="Sewer Cleaning">
+                        <div class="service-card-overlay">
+                            <h3>Sewer Cleaning & Repair</h3>
+                            <p>We offer extensive sewer cleaning and repair to prevent hazardous backups and restore collapsed or root-intruded main lines.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-sump.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-sump.png" alt="Sump Pumps">
+                        <div class="service-card-overlay">
+                            <h3>Sump Pump Installation</h3>
+                            <p>In areas prone to heavy rains or flooding, a proper sump pump installation is critical to safeguarding your basement and foundation from catastrophic water damage.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-toilet.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-toilet.png" alt="Shower & Toilet">
+                        <div class="service-card-overlay">
+                            <h3>Shower & Toilet Installation</h3>
+                            <p>When it comes to bathroom renovations or fixes, we handle comprehensive shower installation, shower repair, and highly efficient toilet installation.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-waterheater.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-waterheater.png" alt="Water Heater">
+                        <div class="service-card-overlay">
+                            <h3>Water Heater Repair</h3>
+                            <p>We are industry leaders in water heater installation and rapid heater repair and replacement for both traditional tank and modern tankless systems.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-construction.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-construction.png" alt="New Construction">
+                        <div class="service-card-overlay">
+                            <h3>New Construction</h3>
+                            <p>Partnering with builders and homeowners, we provide comprehensive new construction plumbing design and installation from the ground up.</p>
+                        </div>
+                    </a>
+
+                    <a href="service-emergency.html" class="service-card" style="text-decoration:none; color:inherit; display:block;">
+                        <img src="assets/service-emergency.png" alt="Emergency Repairs">
+                        <div class="service-card-overlay">
+                            <h3>Emergency Repairs</h3>
+                            <p>Burst pipes and massive leaks don't wait for business hours. Our rapid-response emergency repair team is available 24/7 to secure your property.</p>
+                        </div>
+                    </a>
+
                 </div>
 
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Tap Installation & Repair</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">Precision tap installation and rapid repair to keep your kitchen and bathroom fixtures functioning flawlessly. We fix annoying drips and install premium modern fixtures.</p>
+                <div style="text-align: center; margin-top: 4rem;">
+                    <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Need Immediate Assistance?</h3>
+                    <div class="btn-group" style="justify-content: center;">
+                        <a href="tel:+19367552836" class="btn btn-cyan">Call (936) 755-2836</a>
+                        <button class="btn btn-outline contact-btn">Request Service Online</button>
+                    </div>
                 </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Waste Disposal Installation and Repair</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">If your kitchen requires an upgrade or fix, our experts provide seamless waste disposal installation and repair, ensuring your kitchen remains functional and odor-free.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Plumbing Leak Detection & Repair</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">Water damage is the leading cause of home degradation. We utilize advanced acoustic technology for plumbing leak detection to find hidden drips behind drywall or under the foundation, and repair them instantly.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">System Repipe</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">When infrastructure is too compromised, we offer complete system repipe solutions utilizing modern, highly durable materials like PEX and copper to permanently resolve recurring leaks.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Outdoor Plumbing System Repair</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">Our outdoor plumbing system repair ensures that your irrigation lines, outdoor faucets, and external drainage systems operate perfectly regardless of the season.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Sewer Cleaning and Repair</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">Heavy-duty infrastructure requires specialized care. We offer extensive sewer cleaning and repair to prevent hazardous backups and restore collapsed or root-intruded main lines.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Sump Pump Installation</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">In areas prone to heavy rains or flooding, a proper sump pump installation is critical to safeguarding your basement and foundation from catastrophic water damage.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Shower & Toilet Installation</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">When it comes to bathroom renovations or fixes, we handle comprehensive shower installation, shower repair, and highly efficient toilet installation.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">Water Heater Repair & Installation</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">We are industry leaders in water heater installation and rapid heater repair and replacement for both traditional tank and modern tankless systems.</p>
-                </div>
-
-                <div class="glass-card" style="text-align: left;">
-                    <h3 style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem;">New Construction Plumbing</h3>
-                    <p style="color:var(--text-muted); font-size:1.05rem;">If you are building from the ground up, our team provides expert plumbing design, rough-ins, and fixture installation for new construction projects.</p>
-                </div>
-
-            </div>
-            
-            <div style="margin-top: 3rem; text-align: center; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="tel:5550198" class="cta-button" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Call Emergency Service</a>
-                <button class="cta-button outline contact-btn" data-service="other" style="padding: 1.2rem 3rem; font-size: 1.1rem;">Request Consultation</button>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo-text" style="font-size: 1.2rem; justify-content: center;">Liberty <span>Plumbing</span></div>
-            <p class="footer-copy">© 2026 Liberty Plumbing. Licensed & Insured.<br>Emergency Service: (555) 019-8123</p>
-            <div style="margin-top: 1rem;">
-                <a href="index.html#areas" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View All Service Areas</a>
-                <a href="index.html#faq" style="color: var(--primary); font-size: 0.9rem; margin-right: 1rem;">View Plumbing FAQs</a>
-                <a href="services.html" style="color: var(--primary); font-size: 0.9rem;">View Services</a>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="index.html" class="logo-text" style="display:inline-block; margin-bottom:1rem;">Liberty <span>Plumbing</span></a>
+                <p>For a trusted local plumber, simply fill out our booking form. Our friendly team is always here to offer the help you need. Providing upfront quotes with no hidden fees!</p>
+                <div class="nav-social" style="margin-top: 1rem;">
+                    <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg></a>
+                    <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M21.58 7.19C21.36 6.35 20.71 5.7 19.87 5.48C18.36 5.08 12 5.08 12 5.08C12 5.08 5.64 5.08 4.13 5.48C3.29 5.7 2.64 6.35 2.42 7.19C2 8.7 2 12 2 12C2 12 2 15.3 2.42 16.81C2.64 17.65 3.29 18.3 4.13 18.52C5.64 18.92 12 18.92 12 18.92C12 18.92 18.36 18.92 19.87 18.52C20.71 18.3 21.36 17.65 21.58 16.81C22 15.3 22 12 22 12C22 12 22 8.7 21.58 7.19ZM9.98 15.17V8.83L15.48 12L9.98 15.17Z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="#" class="contact-btn">Contact Us</a></li>
+                    <li><a href="https://maps.app.goo.gl/vxtPHzGMrj5JPKM39" target="_blank" rel="noopener">Google Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="service-drain.html">Drain Cleaning</a></li>
+                    <li><a href="service-repipe.html">Repiping</a></li>
+                    <li><a href="service-waterheater.html">Water Heaters</a></li>
+                    <li><a href="service-leak.html">Leak Detection</a></li>
+                    <li><a href="service-sewer.html">Sewer Repair</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Phone:</strong> <a href="tel:+19367552836">(936) 755-2836</a></li>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Email:</strong> <a href="mailto:info@libertyplumbing.com" style="color:var(--muted); text-decoration:none;">info@libertyplumbing.com</a></li>
+                    <li style="color:var(--muted); font-size:0.9rem;"><strong>Hours:</strong> 24/7 Emergency Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Liberty Plumbing. All Rights Reserved. Licensed & Insured.</p>
+            <div class="footer-legal">
+                <a href="toc.html">Terms & Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
         </div>
     </footer>
@@ -124,9 +232,9 @@
     <div class="modal-overlay" id="contact-modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
-            <h2 class="section-title" style="margin-bottom: 0.5rem;"><span class="line-halo">Request Service</span></h2>
-            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Fill out the form below or call us directly at <a href="tel:5550198" style="color:var(--primary); font-weight: bold;">(555) 019-8123</a>.</p>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We will contact you shortly.'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
+            <h2>Request Service</h2>
+            <p style="color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem;">Fill out the form below or call us directly at <a href="tel:+19367552836" class="text-cyan">(936) 755-2836</a>.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
                 <input type="text" placeholder="Full Name" required>
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
@@ -139,11 +247,11 @@
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
-                <button type="submit" class="cta-button">Submit Request</button>
+                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>

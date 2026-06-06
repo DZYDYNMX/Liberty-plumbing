@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ── Hamburger ──────────────────────────────────────────────
+    // ── Hamburger & Mobile Dropdowns ───────────────────────────
     const hamburger = document.querySelector('.hamburger');
     const navLinks  = document.querySelector('.nav-links');
 
@@ -10,99 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('active');
             navLinks.classList.toggle('active');
         });
+        
+
     }
 
-    // ── Review Carousel Logic ──────────────────────────────────
-    function initCarousel() {
-        const track = document.getElementById('review-track');
-        if (!track) return;
-        const slides = Array.from(track.children);
-        if (slides.length === 0) return;
-        
-        const nextBtn = document.getElementById('next-btn');
-        const prevBtn = document.getElementById('prev-btn');
-        
-        let currentIndex = 0;
-        let isDragging = false;
-        let startPos = 0;
-        let currentTranslate = 0;
-        let prevTranslate = 0;
-        let animationID;
 
-        function updateCarousel() {
-            const slideWidth = slides[0].getBoundingClientRect().width;
-            const gap = 32; // 2rem gap
-            currentTranslate = currentIndex * -(slideWidth + gap);
-            prevTranslate = currentTranslate;
-            track.style.transform = `translateX(${currentTranslate}px)`;
-        }
-
-        if (nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                if (currentIndex < slides.length - 1) currentIndex++;
-                updateCarousel();
-            });
-        }
-        if (prevBtn) {
-            prevBtn.addEventListener('click', () => {
-                if (currentIndex > 0) currentIndex--;
-                updateCarousel();
-            });
-        }
-
-        // Drag handlers
-        track.addEventListener('mousedown', dragStart);
-        track.addEventListener('touchstart', dragStart, {passive: true});
-        track.addEventListener('mouseup', dragEnd);
-        track.addEventListener('mouseleave', dragEnd);
-        track.addEventListener('touchend', dragEnd);
-        track.addEventListener('mousemove', dragAction);
-        track.addEventListener('touchmove', dragAction, {passive: true});
-
-        function dragStart(e) {
-            isDragging = true;
-            startPos = getPositionX(e);
-            animationID = requestAnimationFrame(animationLoop);
-            track.style.transition = 'none';
-        }
-
-        function dragAction(e) {
-            if (!isDragging) return;
-            const currentPosition = getPositionX(e);
-            currentTranslate = prevTranslate + currentPosition - startPos;
-        }
-
-        function dragEnd() {
-            isDragging = false;
-            cancelAnimationFrame(animationID);
-            const movedBy = currentTranslate - prevTranslate;
-            
-            // Snap threshold
-            if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1;
-            if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
-            
-            track.style.transition = 'transform 0.5s ease-out';
-            updateCarousel();
-        }
-
-        function getPositionX(event) {
-            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
-        }
-
-        function animationLoop() {
-            track.style.transform = `translateX(${currentTranslate}px)`;
-            if (isDragging) requestAnimationFrame(animationLoop);
-        }
-        
-        // Auto-play (optional)
-        // setInterval(() => {
-        //     if (!isDragging && currentIndex < slides.length - 1) { currentIndex++; updateCarousel(); }
-        //     else if (!isDragging && currentIndex === slides.length - 1) { currentIndex = 0; updateCarousel(); }
-        // }, 5000);
-
-        window.addEventListener('resize', updateCarousel);
-    }
-    initCarousel();
 
     // ── Global Click Event Delegation (SPA & Modals) ───────────
     document.body.addEventListener('click', async e => {
@@ -183,8 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentMain.className = newMain.className;
             }
 
-            // Re-init carousel if present
-            initCarousel();
+
 
             // Swap modals dynamically
             document.querySelectorAll('.modal-overlay').forEach(m => m.remove());
@@ -217,6 +128,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Re-initialize dynamic components
+            initMobileCollapse();
+            initReadMoreText();
         } catch (error) {
             console.error('SPA Navigation failed:', error);
             window.location.href = url; // Hard fallback
@@ -240,6 +155,197 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         
         item.classList.toggle('active');
+    });
+
+    // ── Progressive Disclosure Logic ────────────────────────────
+    function initMobileCollapse() {
+        if (window.innerWidth > 768) return;
+        document.querySelectorAll('.mobile-collapse').forEach(container => {
+            if (container.dataset.initialized) return;
+            container.dataset.initialized = 'true';
+            
+            const limit = parseInt(container.getAttribute('data-collapse-limit')) || 4;
+            const children = Array.from(container.children).filter(c => !c.classList.contains('show-more-btn'));
+            
+            if (children.length > limit) {
+                children.forEach((child, index) => {
+                    if (index >= limit) {
+                        child.classList.add('mobile-hidden');
+                    }
+                });
+                
+                const btn = document.createElement('button');
+                btn.className = 'show-more-btn';
+                btn.textContent = 'Show More ▾';
+                btn.onclick = () => {
+                    const isHidden = children[limit].classList.contains('mobile-hidden');
+                    children.forEach((child, index) => {
+                        if (index >= limit) {
+                            child.classList.toggle('mobile-hidden', !isHidden);
+                        }
+                    });
+                    btn.textContent = isHidden ? 'Show Less ▴' : 'Show More ▾';
+                    if (!isHidden) {
+                        setTimeout(() => {
+                            const offset = container.getBoundingClientRect().top + window.scrollY - 80; // 80px for navbar offset
+                            window.scrollTo({ top: offset, behavior: 'smooth' });
+                        }, 50);
+                    }
+                };
+                container.parentNode.insertBefore(btn, container.nextSibling);
+            }
+        });
+    }
+
+    function initReadMoreText() {
+        if (window.innerWidth > 768) return;
+        document.querySelectorAll('.read-more-text').forEach(container => {
+            if (container.dataset.initialized) return;
+            container.dataset.initialized = 'true';
+            
+            const btn = document.createElement('button');
+            btn.className = 'read-more-btn';
+            btn.textContent = 'Read More';
+            btn.onclick = () => {
+                const isExpanded = container.classList.contains('expanded');
+                container.classList.toggle('expanded');
+                btn.textContent = isExpanded ? 'Read More' : 'Read Less';
+                if (isExpanded) {
+                    setTimeout(() => {
+                        const offset = container.getBoundingClientRect().top + window.scrollY - 100; // offset
+                        window.scrollTo({ top: offset, behavior: 'smooth' });
+                    }, 50);
+                }
+            };
+            container.appendChild(btn);
+            
+            // Only show button if text actually overflows
+            const textContent = container.querySelector('.text-content');
+            if (textContent && textContent.scrollHeight > textContent.clientHeight) {
+                btn.style.display = 'inline-block';
+            }
+        });
+    }
+
+    function initMarquees() {
+        document.querySelectorAll('.marquee-container').forEach(container => {
+            if (container.dataset.marqueeInitialized) return;
+            container.dataset.marqueeInitialized = 'true';
+
+            const track = container.querySelector('.marquee-track');
+            if (!track) return;
+
+            // Clone items to create seamless loop
+            const items = Array.from(track.children);
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                track.appendChild(clone);
+            });
+            items.forEach(item => {
+                const clone = item.cloneNode(true);
+                track.appendChild(clone);
+            });
+
+            let currentX = 0;
+            let targetSpeed = -1; // default scroll speed
+            let currentSpeed = targetSpeed;
+            let isHovering = false;
+            let isDragging = false;
+            let startX = 0;
+            let dragLastX = 0;
+
+            function getOriginalWidth() {
+                let w = 0;
+                items.forEach(i => w += i.offsetWidth + parseFloat(window.getComputedStyle(track).gap || 0));
+                return w;
+            }
+
+            function loop() {
+                if (!isDragging) {
+                    currentSpeed += (targetSpeed - currentSpeed) * 0.1;
+                    currentX += currentSpeed;
+                }
+
+                const origWidth = getOriginalWidth();
+                if (origWidth > 0) {
+                    if (currentX <= -origWidth) {
+                        currentX += origWidth;
+                    }
+                    if (currentX >= 0) {
+                        currentX -= origWidth;
+                    }
+                }
+
+                track.style.transform = `translateX(${currentX}px)`;
+                requestAnimationFrame(loop);
+            }
+
+            requestAnimationFrame(loop);
+
+            // Mouse tracking
+            container.addEventListener('mouseenter', () => isHovering = true);
+            container.addEventListener('mouseleave', () => {
+                isHovering = false;
+                if (!isDragging) targetSpeed = -1;
+            });
+            container.addEventListener('mousemove', (e) => {
+                if (isHovering && !isDragging) {
+                    const rect = container.getBoundingClientRect();
+                    const xRatio = (e.clientX - rect.left) / rect.width;
+                    targetSpeed = (0.5 - xRatio) * 5; // scales from -2.5 to 2.5
+                }
+            });
+
+            // Touch dragging
+            container.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                container.classList.add('is-dragging');
+                dragLastX = e.touches[0].clientX;
+            }, {passive: true});
+
+            container.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const currentTouchX = e.touches[0].clientX;
+                currentX += (currentTouchX - dragLastX);
+                dragLastX = currentTouchX;
+            }, {passive: true});
+
+            const endDrag = () => {
+                if (!isDragging) return;
+                isDragging = false;
+                container.classList.remove('is-dragging');
+                targetSpeed = -1;
+            };
+
+            container.addEventListener('touchend', endDrag);
+            container.addEventListener('touchcancel', endDrag);
+
+            // Desktop dragging fallback
+            container.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                container.classList.add('is-dragging');
+                dragLastX = e.clientX;
+            });
+            window.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const currentMouseX = e.clientX;
+                currentX += (currentMouseX - dragLastX);
+                dragLastX = currentMouseX;
+            });
+            window.addEventListener('mouseup', endDrag);
+        });
+    }
+
+    initMobileCollapse();
+    initReadMoreText();
+    initMarquees();
+    
+    // Handle window resize cleanly without losing state (optional, basic re-init)
+    window.addEventListener('resize', () => {
+        if (window.innerWidth <= 768) {
+            initMobileCollapse();
+            initReadMoreText();
+        }
     });
 
 });
