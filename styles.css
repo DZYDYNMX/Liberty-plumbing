@@ -35,14 +35,18 @@ a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
 
 .line-halo {
     background: rgba(255, 255, 255, 0.85);
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
+    padding: 0.2rem 0.8rem;
+    border-radius: 12px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    display: inline-block;
-    line-height: 1.4;
+    
+    display: inline;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    
+    line-height: 1.6;
     color: var(--text-main);
-    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.85);
 }
 
 /* ===========================================================
