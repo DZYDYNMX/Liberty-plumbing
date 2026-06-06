@@ -34,16 +34,15 @@ h1, h2, h3, h4 { font-weight: 800; line-height: 1.1; }
 a { color: var(--primary); text-decoration: none; transition: all 0.3s ease; }
 
 .line-halo {
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
     background: rgba(255, 255, 255, 0.85);
-    padding: 0.2rem 1rem;
-    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    display: inline;
+    display: inline-block;
     line-height: 1.4;
     color: var(--text-main);
+    box-shadow: 0 0 20px 15px rgba(255, 255, 255, 0.85);
 }
 
 /* ===========================================================
