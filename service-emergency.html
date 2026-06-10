@@ -10,7 +10,7 @@
     <meta property="og:description" content="Plumbing disasters don't wait for business hours. Our 24/7 emergency response team is always on standby to tackle burst pipes, major floods, and critical system failures immediately.">
     <meta property="og:image" content="https://libertyplumbing.com/assets/service-emergency.webp">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=15">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -28,7 +28,6 @@
                 <li class="nav-services-list">
                     <a href="services.html" class="active">Services <span class="desktop-only-arrow">▾</span></a>
                     <div class="dropdown-menu">
-
                         <a href="service-drain.html">Drain Cleaning</a>
                         <a href="service-tap.html">Tap Repair</a>
                         <a href="service-disposal.html">Waste Disposal</a>
@@ -41,12 +40,12 @@
                         <a href="service-waterheater.html">Water Heaters</a>
                         <a href="service-construction.html">New Construction</a>
                         <a href="service-emergency.html">Emergency Repairs</a>
-
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -54,63 +53,113 @@
 
     <main class="main-content">
         <!-- HERO SECTION -->
-        <section class="hero" style="background-image: url('assets/service-emergency.webp');">
+        <section class="hero" style="background-image: linear-gradient(rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.7)), url('assets/service-emergency.webp');">
             <div class="hero-inner fade-in">
                 <div class="hero-text">
                     <h1>Emergency Repairs</h1>
-                    <div class="label" style="background: rgba(255,255,255,0.2); color: white;">Expert Plumbing Services</div>
-                    <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">Plumbing disasters don't wait for business hours. Our 24/7 emergency response team is always on standby to tackle burst pipes, major floods, and critical system failures immediately.</p>
+                    <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">Plumbing disasters don't wait for business hours. Our 24/7 emergency response team is always on standby to tackle burst pipes, major floods, and critical system failures immediately. When a pipe bursts at 2 AM or raw sewage floods your basement on a holiday weekend, you don't have time to leave voicemails. Liberty Plumbing provides uncompromising, 24/7 emergency plumbing response. Our dispatchers are always on standby, and our trucks are fully stocked with advanced repair equipment. We prioritize rapid arrival times to mitigate water damage and secure your property. When disaster strikes, rely on our experienced master plumbers to bring calm to the chaos and implement permanent, high-quality repairs immediately.</p>
+                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600;">Get My Free Quote</button>
+                </div>
+                <div class="hero-form hide-on-mobile">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Book Online Now</h2>
+                    <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-grid">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
+                            <select class="full-width" aria-label="Select a service" required>
+                                <option value="" disabled>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor">Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency" selected>Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                            <button type="submit" class="full-width btn-cyan">Get My Free Quote</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section class="section section-mid" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <!-- PROBLEMS / WARNING SIGNS SECTION -->
+        <section class="section section-mid" style="padding-top: 4rem; padding-bottom: 4rem; background: var(--navy-mid);">
             <div class="container fade-in">
                 <div class="section-header center" style="margin-bottom: 3rem;">
-                    <div class="label">Why Choose Us</div>
-                    <h2>Our Emergency Repairs Solutions Include</h2>
+                    <div class="label">Expert Insights</div>
+                    <h2>WHAT CONSTITUTES A PLUMBING EMERGENCY?</h2>
+                    <p style="color: var(--light-gray); max-width: 800px; margin: 1rem auto; font-size: 1.05rem;">Not every plumbing issue requires an after-hours call, but some situations will cause catastrophic damage to your home if not addressed immediately. Call our emergency hotline if you encounter:</p>
                 </div>
                 <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                     
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">24/7 Rapid Response</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">When disaster strikes at 2 AM, our dispatched trucks arrive quickly to stop the water and secure your property.</p>
+                    <div class="premium-card">
+                        <h3>Burst Water Pipes</h3>
+                        <p>A ruptured pressurized water line can pump hundreds of gallons of water into your home in minutes, destroying drywall, flooring, and electronics.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Burst Pipe Isolation</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">We quickly locate the break, shut down the localized water supply, and perform immediate repairs to minimize structural damage.</p>
+                    <div class="premium-card">
+                        <h3>Sewage Backups</h3>
+                        <p>Raw sewage flowing out of your drains is a severe biohazard that makes your home uninhabitable and requires immediate main line clearing.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Flood Mitigation</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">We provide emergency pumping and direct you to the necessary restoration services to begin the drying process immediately.</p>
+                    <div class="premium-card">
+                        <h3>Gas Leaks</h3>
+                        <p>If you smell sulfur or rotten eggs, leave the house immediately and call us. Gas line leaks are incredibly dangerous and require certified emergency repair.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">After-Hours Support</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">No answering machines here. You'll speak to a live dispatcher who understands the urgency of your situation.</p>
+                    <div class="premium-card">
+                        <h3>No Water Or Heat In Winter</h3>
+                        <p>A total failure of your water heater or main supply line during freezing temperatures can lead to further burst pipes and unsafe living conditions.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- OTHER SERVICES -->
-        <section class="section section-light" style="padding-top: 4rem; padding-bottom: 4rem;">
+
+        <!-- FEATURES / SOLUTIONS SECTION -->
+        <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 2rem;">
             <div class="container fade-in">
-                <div class="section-header center" style="margin-bottom: 2rem;">
-                    <h2>Other Services We Provide</h2>
+                <div class="section-header center" style="margin-bottom: 3rem;">
+                    <div class="label">Why Choose Us</div>
+                    <h2>OUR EMERGENCY PROTOCOLS</h2>
                 </div>
-                <div class="other-services-grid mobile-collapse" data-collapse-limit="4" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                    <a href="service-drain.html" class="btn btn-outline" style="margin: 0.5rem;">Drain Cleaning</a><a href="service-tap.html" class="btn btn-outline" style="margin: 0.5rem;">Tap Repair</a><a href="service-disposal.html" class="btn btn-outline" style="margin: 0.5rem;">Waste Disposal</a><a href="service-leak.html" class="btn btn-outline" style="margin: 0.5rem;">Leak Detection</a><a href="service-repipe.html" class="btn btn-outline" style="margin: 0.5rem;">System Repipe</a><a href="service-outdoor.html" class="btn btn-outline" style="margin: 0.5rem;">Outdoor Plumbing</a><a href="service-sewer.html" class="btn btn-outline" style="margin: 0.5rem;">Sewer Cleaning</a><a href="service-sump.html" class="btn btn-outline" style="margin: 0.5rem;">Sump Pumps</a><a href="service-toilet.html" class="btn btn-outline" style="margin: 0.5rem;">Shower & Toilet</a><a href="service-waterheater.html" class="btn btn-outline" style="margin: 0.5rem;">Water Heaters</a><a href="service-construction.html" class="btn btn-outline" style="margin: 0.5rem;">New Construction</a>
+                <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    
+                    <div class="premium-card">
+                        <h3>24/7 Rapid Response</h3>
+                        <p>When disaster strikes, our dispatched trucks arrive quickly with the necessary equipment to stop the water and secure your property immediately.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Burst Pipe Isolation</h3>
+                        <p>We rapidly locate the break, shut down the localized water supply, and perform immediate structural repairs to minimize damage.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Flood Mitigation</h3>
+                        <p>We provide emergency pumping and connect you with trusted local restoration services to begin the drying process as fast as possible.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Live Dispatch Support</h3>
+                        <p>No answering machines here. You'll speak to a live human dispatcher who understands the urgency of your situation and tracks the technician's arrival.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
+
         <!-- CTA SECTION -->
-        <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 4rem; text-align: center;">
+        <section class="section" style="padding-top: 4rem; padding-bottom: 4rem; text-align: center; background: var(--navy-mid);">
             <div class="container fade-in" style="max-width: 800px; margin: 0 auto;">
                 <h2 style="margin-bottom: 1.5rem;">Ready to Get Started?</h2>
                 <p style="color: var(--light-gray); margin-bottom: 2rem;">Contact our licensed professionals today for fast, reliable, and upfront pricing on all your plumbing needs.</p>
-                <button class="btn btn-cyan contact-btn" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Get a Free Estimate</button>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="tel:+19367552836" class="btn btn-cyan">Call (936) 755-2836</a>
+                    <button class="btn btn-outline contact-btn">Get a Free Estimate</button>
+                </div>
             </div>
         </section>
     </main>
@@ -150,7 +199,6 @@
                     <li><a href="service-sewer.html">Sewer Cleaning</a></li>
                     <li><a href="service-sump.html">Sump Pumps</a></li>
                     <li><a href="service-toilet.html">Shower & Toilet</a></li>
-                    <li><a href="service-waterheater.html">Water Heaters</a></li>
                     <li><a href="service-construction.html">New Construction</a></li>
                     <li><a href="service-emergency.html">Emergency Repairs</a></li>
                 </ul>
@@ -184,12 +232,20 @@
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
-                    <option value="drain">Drain Cleaning</option>
-                    <option value="other">Other / General Inquiry</option>
+                                <option value="" disabled>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor">Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency" selected>Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
                 <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
@@ -197,6 +253,6 @@
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>

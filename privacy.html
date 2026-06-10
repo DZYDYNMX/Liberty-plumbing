@@ -41,9 +41,10 @@
                         <a href="service-emergency.html">Emergency Repairs</a>
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -141,12 +142,20 @@
                 <input type="text" placeholder="Full Name" required>
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
-                <select id="modal-service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
+                <select id="modal-service" aria-label="Select a service" required>
+                    <option value="" disabled selected>Service Required</option>
                     <option value="drain">Drain Cleaning</option>
+                    <option value="tap">Tap & Fixture Repair</option>
+                    <option value="disposal">Waste Disposal</option>
+                    <option value="leak">Leak Detection</option>
+                    <option value="repipe">System Repipe</option>
+                    <option value="outdoor">Outdoor Plumbing</option>
+                    <option value="sewer">Sewer Cleaning</option>
+                    <option value="sump">Sump Pumps</option>
+                    <option value="toilet">Shower & Toilet</option>
+                    <option value="waterheater">Water Heaters</option>
+                    <option value="construction">New Construction</option>
+                    <option value="emergency">Emergency Repairs</option>
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
@@ -155,6 +164,6 @@
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>

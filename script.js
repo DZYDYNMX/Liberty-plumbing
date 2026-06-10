@@ -49,6 +49,57 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        // Lightbox Intercept
+        const galleryItem = e.target.closest('.gallery-item');
+        if (galleryItem) {
+            const lightbox = document.getElementById('lightbox-modal');
+            if (lightbox) {
+                const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+                const index = galleryItems.indexOf(galleryItem);
+                const img = galleryItem.querySelector('img');
+                if (img) {
+                    const lightboxImg = lightbox.querySelector('.lightbox-img');
+                    lightboxImg.src = img.src;
+                    lightbox.dataset.currentIndex = index;
+                    lightbox.classList.add('active');
+                    document.body.classList.add('no-scroll');
+                }
+            }
+            return;
+        }
+        
+        const lightbox = document.getElementById('lightbox-modal');
+        if (lightbox && lightbox.classList.contains('active')) {
+            if (e.target.closest('.lightbox-close') || e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+                return;
+            }
+            
+            const galleryItems = Array.from(document.querySelectorAll('.gallery-item img'));
+            if (galleryItems.length > 0) {
+                let currentIndex = parseInt(lightbox.dataset.currentIndex) || 0;
+                let changed = false;
+                
+                if (e.target.closest('.lightbox-prev')) {
+                    currentIndex--;
+                    changed = true;
+                } else if (e.target.closest('.lightbox-next')) {
+                    currentIndex++;
+                    changed = true;
+                }
+                
+                if (changed) {
+                    if (currentIndex < 0) currentIndex = galleryItems.length - 1;
+                    if (currentIndex >= galleryItems.length) currentIndex = 0;
+                    lightbox.dataset.currentIndex = currentIndex;
+                    const lightboxImg = lightbox.querySelector('.lightbox-img');
+                    lightboxImg.src = galleryItems[currentIndex].src;
+                    return;
+                }
+            }
+        }
+
         // SPA Navigation Intercept
         const link = e.target.closest('a');
         if (!link || link.target === '_blank' || link.hasAttribute('download')) return;
@@ -98,8 +149,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             // Swap modals dynamically
-            document.querySelectorAll('.modal-overlay').forEach(m => m.remove());
-            doc.querySelectorAll('.modal-overlay').forEach(m => document.body.appendChild(m));
+            document.querySelectorAll('.modal-overlay, .lightbox-overlay').forEach(m => m.remove());
+            doc.querySelectorAll('.modal-overlay, .lightbox-overlay').forEach(m => document.body.appendChild(m));
 
             // Swap background image if it has changed
             const newImgSrc = doc.querySelector('#bg-image')?.getAttribute('src');
@@ -340,7 +391,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileCollapse();
     initReadMoreText();
     initMarquees();
-    
     // Handle window resize cleanly without losing state (optional, basic re-init)
     window.addEventListener('resize', () => {
         if (window.innerWidth <= 768) {

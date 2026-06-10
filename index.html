@@ -63,9 +63,10 @@
 
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -79,13 +80,14 @@
                     <h1>Don't Delay, Get Your Quote Today!</h1>
                     <p>For a trusted local plumber, simply fill out our booking form. Our friendly team is always here to offer the help you need. Providing upfront quotes with no hidden fees!</p>
                     <div class="hero-phone-cta" style="margin-top: 1.5rem;">
-                        <a href="tel:+19367552836" class="btn btn-cyan" style="font-size: 1.15rem; padding: 1rem 1.5rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);">
+                        <a href="tel:+19367552836" class="btn btn-cyan" style="font-size: 1.15rem; padding: 1rem 1.5rem; width: 100%; max-width: 400px; display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem;">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                             Call (936) 755-2836
                         </a>
                     </div>
+                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
                 </div>
-                <div class="hero-form">
+                <div class="hero-form hide-on-mobile">
                     <h2>Book Online Now</h2>
                     <p class="form-sub">Simply complete the form below & we'll get back to you as soon as possible</p>
                     <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
@@ -96,11 +98,19 @@
                             <input type="text" placeholder="Suburb" required>
                             <select class="full-width" aria-label="Select a service" required>
                                 <option value="" disabled selected>Service Required</option>
-                                <option value="emergency">Emergency Repair</option>
-                                <option value="drain">Blocked Drain</option>
-                                <option value="water_heater">Hot Water</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
                                 <option value="leak">Leak Detection</option>
-                                <option value="other">Other</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor">Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency">Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
                             </select>
                             <textarea class="full-width" placeholder="Optional: How can we help you? (Provide any plumbing problems & details here)" rows="4"></textarea>
                             <button type="submit">Book Online Today</button>
@@ -118,17 +128,17 @@
                     <h2>How It Works</h2>
                 </div>
                 <div class="features-grid staggered">
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <div class="watermark-number">01</div>
                         <h3>Request Service</h3>
                         <p>Call us or fill out our online form to schedule an appointment.</p>
                     </div>
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <div class="watermark-number">02</div>
                         <h3>Get a Quote</h3>
                         <p>We assess the issue and provide a clear, upfront estimate.</p>
                     </div>
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <div class="watermark-number">03</div>
                         <h3>Problem Solved</h3>
                         <p>Our experts fix the problem efficiently, leaving the workspace clean.</p>
@@ -167,18 +177,18 @@
                 </div>
                 <div class="marquee-container" data-marquee>
                     <div class="marquee-track">
-                        <a href="service-emergency.html" class="btn btn-outline marquee-item" style="border-color: #ef4444;">Emergency Repair</a>
-                        <a href="service-drain.html" class="btn btn-outline marquee-item">Drain Cleaning</a>
-                        <a href="service-waterheater.html" class="btn btn-outline marquee-item">Water Heaters</a>
-                        <a href="service-leak.html" class="btn btn-outline marquee-item">Leak Detection</a>
-                        <a href="service-sewer.html" class="btn btn-outline marquee-item">Sewer Cleaning</a>
-                        <a href="service-repipe.html" class="btn btn-outline marquee-item">System Repipe</a>
-                        <a href="service-toilet.html" class="btn btn-outline marquee-item">Shower & Toilet</a>
-                        <a href="service-tap.html" class="btn btn-outline marquee-item">Tap Installation</a>
-                        <a href="service-disposal.html" class="btn btn-outline marquee-item">Waste Disposal</a>
-                        <a href="service-outdoor.html" class="btn btn-outline marquee-item">Outdoor Plumbing</a>
-                        <a href="service-sump.html" class="btn btn-outline marquee-item">Sump Pumps</a>
-                        <a href="service-construction.html" class="btn btn-outline marquee-item">New Construction</a>
+                        <a href="service-emergency.html" class="marquee-item">Emergency Repair</a>
+                        <a href="service-drain.html" class="marquee-item">Drain Cleaning</a>
+                        <a href="service-waterheater.html" class="marquee-item">Water Heaters</a>
+                        <a href="service-leak.html" class="marquee-item">Leak Detection</a>
+                        <a href="service-sewer.html" class="marquee-item">Sewer Cleaning</a>
+                        <a href="service-repipe.html" class="marquee-item">System Repipe</a>
+                        <a href="service-toilet.html" class="marquee-item">Shower & Toilet</a>
+                        <a href="service-tap.html" class="marquee-item">Tap Installation</a>
+                        <a href="service-disposal.html" class="marquee-item">Waste Disposal</a>
+                        <a href="service-outdoor.html" class="marquee-item">Outdoor Plumbing</a>
+                        <a href="service-sump.html" class="marquee-item">Sump Pumps</a>
+                        <a href="service-construction.html" class="marquee-item">New Construction</a>
                     </div>
                 </div>
                 <div style="text-align: center; margin-top: 3rem;">
@@ -195,15 +205,15 @@
                     <h2>Why Choose Us?</h2>
                 </div>
                 <div class="features-grid staggered">
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <h3>24/7 Availability</h3>
                         <p>Burst pipes don't wait for business hours. Our rapid-response teams are available around the clock.</p>
                     </div>
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <h3>Clean Workspaces</h3>
                         <p>Boot covers, drop cloths, and a spotless cleanup are guaranteed on every single job.</p>
                     </div>
-                    <div class="glow-card">
+                    <div class="premium-card">
                         <h3>Upfront Pricing</h3>
                         <p>No hidden fees. We diagnose the issue and provide a clear quote before any wrenches are turned.</p>
                     </div>
@@ -279,28 +289,28 @@
                 </div>
                 <div class="marquee-container" data-marquee>
                     <div class="marquee-track">
-                        <a href="area-bellaire.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Bellaire</a>
-                        <a href="area-brazoria.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Brazoria</a>
-                        <a href="area-brookshire.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Brookshire</a>
-                        <a href="area-cleveland.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Cleveland</a>
-                        <a href="area-conroe.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Conroe</a>
-                        <a href="area-cypress.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Cypress</a>
-                        <a href="area-fort-bend.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Fort Bend</a>
-                        <a href="area-galveston.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Galveston</a>
-                        <a href="area-houston.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Houston</a>
-                        <a href="area-jersey-village.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Jersey Village</a>
-                        <a href="area-katy.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Katy</a>
-                        <a href="area-liberty.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Liberty</a>
-                        <a href="area-magnolia.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Magnolia</a>
-                        <a href="area-missouri-city.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Missouri City</a>
-                        <a href="area-montgomery.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Montgomery</a>
-                        <a href="area-richmond.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Richmond</a>
-                        <a href="area-splendora.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Splendora</a>
-                        <a href="area-spring.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Spring</a>
-                        <a href="area-sugar-land.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Sugar Land</a>
-                        <a href="area-tomball.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Tomball</a>
-                        <a href="area-waller.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Waller</a>
-                        <a href="area-willis.html" class="btn btn-outline marquee-item" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Willis</a>
+                        <a href="area-bellaire.html" class="marquee-item">Bellaire</a>
+                        <a href="area-brazoria.html" class="marquee-item">Brazoria</a>
+                        <a href="area-brookshire.html" class="marquee-item">Brookshire</a>
+                        <a href="area-cleveland.html" class="marquee-item">Cleveland</a>
+                        <a href="area-conroe.html" class="marquee-item">Conroe</a>
+                        <a href="area-cypress.html" class="marquee-item">Cypress</a>
+                        <a href="area-fort-bend.html" class="marquee-item">Fort Bend</a>
+                        <a href="area-galveston.html" class="marquee-item">Galveston</a>
+                        <a href="area-houston.html" class="marquee-item">Houston</a>
+                        <a href="area-jersey-village.html" class="marquee-item">Jersey Village</a>
+                        <a href="area-katy.html" class="marquee-item">Katy</a>
+                        <a href="area-liberty.html" class="marquee-item">Liberty</a>
+                        <a href="area-magnolia.html" class="marquee-item">Magnolia</a>
+                        <a href="area-missouri-city.html" class="marquee-item">Missouri City</a>
+                        <a href="area-montgomery.html" class="marquee-item">Montgomery</a>
+                        <a href="area-richmond.html" class="marquee-item">Richmond</a>
+                        <a href="area-splendora.html" class="marquee-item">Splendora</a>
+                        <a href="area-spring.html" class="marquee-item">Spring</a>
+                        <a href="area-sugar-land.html" class="marquee-item">Sugar Land</a>
+                        <a href="area-tomball.html" class="marquee-item">Tomball</a>
+                        <a href="area-waller.html" class="marquee-item">Waller</a>
+                        <a href="area-willis.html" class="marquee-item">Willis</a>
                     </div>
                 </div>
             </div>
@@ -417,19 +427,27 @@
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="" disabled selected>Service Required</option>
                     <option value="drain">Drain Cleaning</option>
+                    <option value="tap">Tap & Fixture Repair</option>
+                    <option value="disposal">Waste Disposal</option>
+                    <option value="leak">Leak Detection</option>
+                    <option value="repipe">System Repipe</option>
+                    <option value="outdoor">Outdoor Plumbing</option>
+                    <option value="sewer">Sewer Cleaning</option>
+                    <option value="sump">Sump Pumps</option>
+                    <option value="toilet">Shower & Toilet</option>
+                    <option value="waterheater">Water Heaters</option>
+                    <option value="construction">New Construction</option>
+                    <option value="emergency">Emergency Repairs</option>
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
-                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
+                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:1.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>

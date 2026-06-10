@@ -139,6 +139,7 @@ html_template = """<!DOCTYPE html>
 
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
@@ -152,8 +153,36 @@ html_template = """<!DOCTYPE html>
             <div class="hero-inner fade-in">
                 <div class="hero-text">
                     <h1>Expert Plumbing in {city}, TX</h1>
-                    <div class="label" style="background: rgba(255,255,255,0.2); color: white;">Local Expertise</div>
                     <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">{desc}</p>
+                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
+                </div>
+                <div class="hero-form hide-on-mobile">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Book Online Now</h2>
+                    <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-grid">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
+                            <select class="full-width" aria-label="Select a service" required>
+                                <option value="" disabled selected>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor">Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency">Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                            <button type="submit" class="full-width btn-cyan">Get My Free Quote</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -188,18 +217,7 @@ html_template = """<!DOCTYPE html>
             </div>
         </section>
 
-        <section class="section" style="padding-top: 3rem; padding-bottom: 3rem;">
-            <div class="container fade-in">
-                <div class="label" style="text-align: center;">Service Areas</div>
-                <h2 style="text-align: center; margin-bottom: 2rem;">Nearby Areas We Serve</h2>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="area-houston.html" class="btn btn-outline">Houston</a>
-                    <a href="area-katy.html" class="btn btn-outline">Katy</a>
-                    <a href="area-sugar-land.html" class="btn btn-outline">Sugar Land</a>
-                    <a href="area-spring.html" class="btn btn-outline">Spring</a>
-                </div>
-            </div>
-        </section>
+
     </main>
 
     <footer>
@@ -264,11 +282,19 @@ html_template = """<!DOCTYPE html>
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="" disabled selected>Service Required</option>
                     <option value="drain">Drain Cleaning</option>
+                    <option value="tap">Tap & Fixture Repair</option>
+                    <option value="disposal">Waste Disposal</option>
+                    <option value="leak">Leak Detection</option>
+                    <option value="repipe">System Repipe</option>
+                    <option value="outdoor">Outdoor Plumbing</option>
+                    <option value="sewer">Sewer Cleaning</option>
+                    <option value="sump">Sump Pumps</option>
+                    <option value="toilet">Shower & Toilet</option>
+                    <option value="waterheater">Water Heaters</option>
+                    <option value="construction">New Construction</option>
+                    <option value="emergency">Emergency Repairs</option>
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>

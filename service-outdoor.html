@@ -10,7 +10,7 @@
     <meta property="og:description" content="From outdoor hose bibbs to sprinkler system feed lines, we handle all exterior plumbing needs. Ensure your outdoor kitchen, pool house, or garden supply lines are winter-ready and leak-free.">
     <meta property="og:image" content="https://libertyplumbing.com/assets/service-outdoor.webp">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=15">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -28,7 +28,6 @@
                 <li class="nav-services-list">
                     <a href="services.html" class="active">Services <span class="desktop-only-arrow">▾</span></a>
                     <div class="dropdown-menu">
-
                         <a href="service-drain.html">Drain Cleaning</a>
                         <a href="service-tap.html">Tap Repair</a>
                         <a href="service-disposal.html">Waste Disposal</a>
@@ -41,12 +40,12 @@
                         <a href="service-waterheater.html">Water Heaters</a>
                         <a href="service-construction.html">New Construction</a>
                         <a href="service-emergency.html">Emergency Repairs</a>
-
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -54,63 +53,113 @@
 
     <main class="main-content">
         <!-- HERO SECTION -->
-        <section class="hero" style="background-image: url('assets/service-outdoor.webp');">
+        <section class="hero" style="background-image: linear-gradient(rgba(10, 22, 40, 0.7), rgba(10, 22, 40, 0.7)), url('assets/service-outdoor.webp');">
             <div class="hero-inner fade-in">
                 <div class="hero-text">
                     <h1>Outdoor Plumbing</h1>
-                    <div class="label" style="background: rgba(255,255,255,0.2); color: white;">Expert Plumbing Services</div>
-                    <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">From outdoor hose bibbs to sprinkler system feed lines, we handle all exterior plumbing needs. Ensure your outdoor kitchen, pool house, or garden supply lines are winter-ready and leak-free.</p>
+                    <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">From outdoor hose bibbs to sprinkler system feed lines, we handle all exterior plumbing needs. Ensure your outdoor kitchen, pool house, or garden supply lines are winter-ready and leak-free. Your outdoor plumbing is just as important as your indoor plumbing, yet it faces the harshest conditions. From freezing winter temperatures to scorching summer heat, exterior pipes and fixtures take a beating. We’ll take care of all your service needs, like replacing cracked hose bibbs, running new lines for outdoor kitchens, and securing your irrigation feeds. Call Liberty Plumbing to protect your exterior investments and prevent outdoor leaks from flooding your yard and foundation.</p>
+                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600;">Get My Free Quote</button>
+                </div>
+                <div class="hero-form hide-on-mobile">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Book Online Now</h2>
+                    <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-grid">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
+                            <select class="full-width" aria-label="Select a service" required>
+                                <option value="" disabled>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor" selected>Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency">Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                            <button type="submit" class="full-width btn-cyan">Get My Free Quote</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- FEATURES SECTION -->
-        <section class="section section-mid" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <!-- PROBLEMS / WARNING SIGNS SECTION -->
+        <section class="section section-mid" style="padding-top: 4rem; padding-bottom: 4rem; background: var(--navy-mid);">
             <div class="container fade-in">
                 <div class="section-header center" style="margin-bottom: 3rem;">
-                    <div class="label">Why Choose Us</div>
-                    <h2>Our Outdoor Plumbing Solutions Include</h2>
+                    <div class="label">Expert Insights</div>
+                    <h2>COMMON OUTDOOR PLUMBING ISSUES</h2>
+                    <p style="color: var(--light-gray); max-width: 800px; margin: 1rem auto; font-size: 1.05rem;">Because outdoor plumbing is out of sight, problems are often ignored until a massive puddle forms or a pipe bursts in the winter. Keep an eye out for these frequent exterior plumbing emergencies:</p>
                 </div>
                 <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                     
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Hose Bibb Replacement</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">We swap out leaky, stubborn outdoor spigots with durable, frost-proof sillcocks that stand up to the elements.</p>
+                    <div class="premium-card">
+                        <h3>Frozen Pipes</h3>
+                        <p>Exposed pipes that aren't properly winterized will freeze, expand, and rupture, causing massive flooding when the ice thaws.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Outdoor Kitchen Plumbing</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">Custom gas and water line installations for outdoor sinks, grills, and bars, built safely to local codes.</p>
+                    <div class="premium-card">
+                        <h3>Leaking Hose Bibbs</h3>
+                        <p>A spigot that constantly drips wastes an incredible amount of water and can seep into your home's foundation over time.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Winterization</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">Protect your pipes from freezing. We correctly drain and insulate your outdoor plumbing systems before the cold weather hits.</p>
+                    <div class="premium-card">
+                        <h3>Broken Sprinkler Lines</h3>
+                        <p>A sudden drop in water pressure to your irrigation system usually points to a cracked underground feed line that needs excavation.</p>
                     </div>
-                    <div style="background: var(--navy-dark); padding: 2rem; border-radius: var(--radius); border-left: 4px solid var(--cyan);">
-                        <h3 style="margin-bottom: 0.5rem;">Sprinkler Feed Line Repairs</h3>
-                        <p style="color: var(--light-gray); font-size: 0.95rem;">We repair broken backflow preventers and primary feed lines to keep your irrigation system running flawlessly.</p>
+                    <div class="premium-card">
+                        <h3>Clogged Exterior Drains</h3>
+                        <p>Leaves, mud, and debris can easily clog patio and driveway drains, leading to standing water that damages concrete and masonry.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- OTHER SERVICES -->
-        <section class="section section-light" style="padding-top: 4rem; padding-bottom: 4rem;">
+
+        <!-- FEATURES / SOLUTIONS SECTION -->
+        <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 2rem;">
             <div class="container fade-in">
-                <div class="section-header center" style="margin-bottom: 2rem;">
-                    <h2>Other Services We Provide</h2>
+                <div class="section-header center" style="margin-bottom: 3rem;">
+                    <div class="label">Why Choose Us</div>
+                    <h2>OUTDOOR SERVICES WE PROVIDE</h2>
                 </div>
-                <div class="other-services-grid mobile-collapse" data-collapse-limit="4" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                    <a href="service-drain.html" class="btn btn-outline" style="margin: 0.5rem;">Drain Cleaning</a><a href="service-tap.html" class="btn btn-outline" style="margin: 0.5rem;">Tap Repair</a><a href="service-disposal.html" class="btn btn-outline" style="margin: 0.5rem;">Waste Disposal</a><a href="service-leak.html" class="btn btn-outline" style="margin: 0.5rem;">Leak Detection</a><a href="service-repipe.html" class="btn btn-outline" style="margin: 0.5rem;">System Repipe</a><a href="service-sewer.html" class="btn btn-outline" style="margin: 0.5rem;">Sewer Cleaning</a><a href="service-sump.html" class="btn btn-outline" style="margin: 0.5rem;">Sump Pumps</a><a href="service-toilet.html" class="btn btn-outline" style="margin: 0.5rem;">Shower & Toilet</a><a href="service-waterheater.html" class="btn btn-outline" style="margin: 0.5rem;">Water Heaters</a><a href="service-construction.html" class="btn btn-outline" style="margin: 0.5rem;">New Construction</a><a href="service-emergency.html" class="btn btn-outline" style="margin: 0.5rem;">Emergency Repairs</a>
+                <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    
+                    <div class="premium-card">
+                        <h3>Hose Bibb Replacement</h3>
+                        <p>We swap out leaky, stubborn outdoor spigots with durable, frost-proof sillcocks that stand up to freezing weather.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Outdoor Kitchen Plumbing</h3>
+                        <p>Custom gas and water line installations for outdoor sinks, grills, and bars, built safely to local codes.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Winterization Services</h3>
+                        <p>Protect your pipes from freezing. We correctly drain and insulate your outdoor plumbing systems before the extreme cold hits.</p>
+                    </div>
+                    <div class="premium-card">
+                        <h3>Sprinkler Feed Repairs</h3>
+                        <p>We repair broken backflow preventers and primary feed lines to keep your irrigation system running flawlessly.</p>
+                    </div>
                 </div>
             </div>
         </section>
         
+
         <!-- CTA SECTION -->
-        <section class="section section-dark" style="padding-top: 4rem; padding-bottom: 4rem; text-align: center;">
+        <section class="section" style="padding-top: 4rem; padding-bottom: 4rem; text-align: center; background: var(--navy-mid);">
             <div class="container fade-in" style="max-width: 800px; margin: 0 auto;">
                 <h2 style="margin-bottom: 1.5rem;">Ready to Get Started?</h2>
                 <p style="color: var(--light-gray); margin-bottom: 2rem;">Contact our licensed professionals today for fast, reliable, and upfront pricing on all your plumbing needs.</p>
-                <button class="btn btn-cyan contact-btn" style="font-size: 1.2rem; padding: 1rem 2.5rem;">Get a Free Estimate</button>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="tel:+19367552836" class="btn btn-cyan">Call (936) 755-2836</a>
+                    <button class="btn btn-outline contact-btn">Get a Free Estimate</button>
+                </div>
             </div>
         </section>
     </main>
@@ -150,7 +199,6 @@
                     <li><a href="service-sewer.html">Sewer Cleaning</a></li>
                     <li><a href="service-sump.html">Sump Pumps</a></li>
                     <li><a href="service-toilet.html">Shower & Toilet</a></li>
-                    <li><a href="service-waterheater.html">Water Heaters</a></li>
                     <li><a href="service-construction.html">New Construction</a></li>
                     <li><a href="service-emergency.html">Emergency Repairs</a></li>
                 </ul>
@@ -184,12 +232,20 @@
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
-                    <option value="drain">Drain Cleaning</option>
-                    <option value="other">Other / General Inquiry</option>
+                                <option value="" disabled>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor" selected>Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency">Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
                 <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
@@ -197,6 +253,6 @@
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>

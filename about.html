@@ -41,9 +41,10 @@
                         <a href="service-emergency.html">Emergency Repairs</a>
                     </div>
                 </li>
+                <li><a href="gallery.html">Our Work</a></li>
                 <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -54,9 +55,37 @@
             <div class="hero-inner fade-in">
                 <div class="hero-text">
                     <h1>About Liberty Plumbing</h1>
-                    <div class="label" style="background: rgba(255,255,255,0.2); color: white;">Our Story</div>
                     <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 1rem; line-height: 1.6;">At Liberty Plumbing, we understand that inviting a tradesperson into your home requires absolute trust. Founded on the core principles of unwavering transparency, meticulous cleanliness, and elite technical excellence, we have established ourselves as the region's premier plumbing service provider.</p>
                     <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">Our mission is simple yet ambitious: to completely redefine the plumbing experience. We've eliminated the endless waiting windows, the hidden fees, and the mess left behind. Our expert team undergoes rigorous ongoing training and background checks to ensure you receive the highest caliber of service possible. When you choose Liberty Plumbing, you're not just hiring a plumber. You're partnering with dedicated professionals committed to the health of your home and your total peace of mind.</p>
+                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
+                </div>
+                <div class="hero-form hide-on-mobile">
+                    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Book Online Now</h2>
+                    <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div class="form-grid">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
+                            <select class="full-width" aria-label="Select a service" required>
+                                <option value="" disabled selected>Service Required</option>
+                                <option value="drain">Drain Cleaning</option>
+                                <option value="tap">Tap & Fixture Repair</option>
+                                <option value="disposal">Waste Disposal</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="repipe">System Repipe</option>
+                                <option value="outdoor">Outdoor Plumbing</option>
+                                <option value="sewer">Sewer Cleaning</option>
+                                <option value="sump">Sump Pumps</option>
+                                <option value="toilet">Shower & Toilet</option>
+                                <option value="waterheater">Water Heaters</option>
+                                <option value="construction">New Construction</option>
+                                <option value="emergency">Emergency Repairs</option>
+                                <option value="other">Other / General Inquiry</option>
+                            </select>
+                            <button type="submit" class="full-width btn-cyan">Get My Free Quote</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -67,16 +96,16 @@
                     <div class="label">The Liberty Difference</div>
                     <h2>Our Core Values</h2>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
+                <div class="features-grid staggered">
+                    <div class="premium-card">
                         <h3>Integrity First</h3>
                         <p>We believe in honest work and transparent pricing. You will always know the cost before we begin.</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="premium-card">
                         <h3>Community Focused</h3>
                         <p>As a locally owned business, we treat our neighbors with respect and care, ensuring a safe community.</p>
                     </div>
-                    <div class="feature-card">
+                    <div class="premium-card">
                         <h3>Excellence in Craft</h3>
                         <p>Our plumbers are highly trained and committed to delivering the highest quality workmanship.</p>
                     </div>
@@ -160,19 +189,27 @@
                 <input type="tel" placeholder="Phone Number" required>
                 <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
-                    <option value="" disabled selected>Select Service Needed</option>
-                    <option value="emergency">Emergency Repair</option>
-                    <option value="repiping">Whole-Home Repiping</option>
-                    <option value="water_heater">Water Heater Repair/Install</option>
+                    <option value="" disabled selected>Service Required</option>
                     <option value="drain">Drain Cleaning</option>
+                    <option value="tap">Tap & Fixture Repair</option>
+                    <option value="disposal">Waste Disposal</option>
+                    <option value="leak">Leak Detection</option>
+                    <option value="repipe">System Repipe</option>
+                    <option value="outdoor">Outdoor Plumbing</option>
+                    <option value="sewer">Sewer Cleaning</option>
+                    <option value="sump">Sump Pumps</option>
+                    <option value="toilet">Shower & Toilet</option>
+                    <option value="waterheater">Water Heaters</option>
+                    <option value="construction">New Construction</option>
+                    <option value="emergency">Emergency Repairs</option>
                     <option value="other">Other / General Inquiry</option>
                 </select>
                 <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
-                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
+                <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:1.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
