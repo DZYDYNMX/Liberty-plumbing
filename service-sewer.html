@@ -10,12 +10,13 @@
     <meta property="og:description" content="Main sewer line blockages require heavy-duty solutions. We provide rooter services, trenchless sewer repair, and thorough cleanouts to prevent hazardous sewage backups into your home.">
     <meta property="og:image" content="https://libertyplumbing.com/assets/service-sewer.webp">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css?v=32">
+    <link rel="stylesheet" href="styles.css?v=34">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
     <link rel="preload" as="image" href="assets/hero-plumber.webp" fetchpriority="high">
+    <script src="script.js?v=33" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -80,9 +81,9 @@
                     <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
                     <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
                         <div class="form-grid">
-                            <input type="text" placeholder="Name" required>
-                            <input type="tel" placeholder="Phone Number" required>
-                            <input type="email" placeholder="Email Address">
+                            <input type="text" aria-label="Name" placeholder="Name" required>
+                            <input type="tel" aria-label="Phone Number" placeholder="Phone Number" required>
+                            <input type="email" aria-label="Email Address" placeholder="Email Address">
                             <select class="full-width" aria-label="Select a service" required>
                                 <option value="" disabled>Service Required</option>
                                 <option value="drain">Drain Cleaning</option>
@@ -243,9 +244,9 @@
             <h2>Request Service</h2>
             <p style="color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem;">Fill out the form below or call us directly at <a href="tel:+19367552836" class="text-cyan">(936) 755-2836</a>.</p>
             <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
-                <input type="text" placeholder="Full Name" required>
-                <input type="tel" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address">
+                <input type="text" aria-label="Full Name" placeholder="Full Name" required>
+                <input type="tel" aria-label="Phone Number" placeholder="Phone Number" required>
+                <input type="email" aria-label="Email Address" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
                                 <option value="" disabled>Service Required</option>
                                 <option value="drain">Drain Cleaning</option>
@@ -262,12 +263,11 @@
                                 <option value="emergency">Emergency Repairs</option>
                                 <option value="other">Other / General Inquiry</option>
                 </select>
-                <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
+                <textarea aria-label="Tell us about the issue..." placeholder="Tell us about the issue..." rows="4" required></textarea>
                 <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    <script src="script.js?v=4"></script>
-</body>
+    </body>
 </html>

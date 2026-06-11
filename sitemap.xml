@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://liberty-plumbing-example.com/service-drain.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-sump.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-leak.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://liberty-plumbing-example.com/area-richmond.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/index.html</loc>
@@ -14,67 +26,107 @@
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-brookshire.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-jersey-village.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/toc.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-conroe.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-disposal.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-tomball.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-montgomery.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/areas.html</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-emergency.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-cypress.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-cleveland.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-liberty.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-waterheater.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-bellaire.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-galveston.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-sewer.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/gallery.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-houston.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-toilet.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-outdoor.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-fort-bend.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-tap.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-waller.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-katy.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-spring.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-brazoria.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/services.html</loc>
@@ -82,22 +134,34 @@
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-magnolia.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-repipe.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-sugar-land.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-splendora.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-missouri-city.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/privacy.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://liberty-plumbing-example.com/area-willis.html</loc>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://liberty-plumbing-example.com/service-construction.html</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>
