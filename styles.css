@@ -148,14 +148,14 @@ img {
     visibility: visible;
     transform: translateY(0);
 }
-.dropdown-menu a {
+.dropdown-menu a:not(.btn) {
     display: block;
     padding: 0.6rem 1.2rem;
     color: var(--light-gray);
     font-size: 0.9rem;
     font-weight: 400;
 }
-.dropdown-menu a:hover {
+.dropdown-menu a:not(.btn):hover {
     background: rgba(239, 68, 68, 0.1);
     color: var(--red);
 }
