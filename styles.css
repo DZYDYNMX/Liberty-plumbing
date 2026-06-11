@@ -448,9 +448,9 @@ img {
     justify-content: center;
 }
 .btn-outline-cyan:hover {
-    background: transparent !important;
-    border-color: var(--red) !important;
-    color: var(--white) !important;
+    background: var(--cyan) !important;
+    border-color: var(--cyan) !important;
+    color: var(--navy-dark) !important;
 }
 .sleek-service-link {
     display: flex;
