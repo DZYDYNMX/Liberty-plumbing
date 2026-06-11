@@ -1140,7 +1140,7 @@ a:focus-visible, button:focus-visible {
     /* Button Group Mobile Optimization */
     .btn-group {
         display: grid !important;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 0.75rem !important;
     }
     .btn-group .btn {
