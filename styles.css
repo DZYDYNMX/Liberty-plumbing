@@ -1475,6 +1475,29 @@ a:focus-visible, button:focus-visible {
     filter: brightness(1.1);
 }
 
+.image-marquee-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 1rem 1rem 1rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.image-marquee-item:hover .image-marquee-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media (max-width: 768px) {
     .image-marquee-item {
