@@ -1043,15 +1043,7 @@ a:focus-visible, button:focus-visible {
 .marquee-container.is-dragging .marquee-item {
     pointer-events: none;
 }
-@media (min-width: 769px) {
-    .marquee-item:hover {
-        transform: translateY(-2px);
-        background: rgba(255, 255, 255, 0.08);
-        border-color: var(--cyan);
-        color: var(--white);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    }
-}
+
 
 .desktop-hidden {
     display: none;
@@ -1566,4 +1558,39 @@ a:focus-visible, button:focus-visible {
     .image-marquee-item {
         width: 240px;
     }
+}
+
+/* ===========================================================
+   AREA DIRECTORY LIST (SERVICE AREAS)
+   =========================================================== */
+.area-directory-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.pill-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.5rem;
+    color: var(--light-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.pill-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--cyan);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
