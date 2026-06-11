@@ -1090,8 +1090,8 @@ a:focus-visible, button:focus-visible {
         text-align: center;
         padding: 1rem;
         font-size: 1.1rem;
-        background: var(--cyan);
-        color: var(--navy-dark);
+        background: var(--red);
+        color: var(--white);
         border: none;
         display: block;
     }
