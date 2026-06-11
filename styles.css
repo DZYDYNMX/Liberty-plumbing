@@ -1392,6 +1392,55 @@ a:focus-visible, button:focus-visible {
 .explore-link:hover {
     color: var(--cyan);
 }
+/* ===========================================================
+   LEGAL PAGES
+   =========================================================== */
+.legal-card {
+    background: var(--navy-mid);
+    border-radius: var(--radius-lg);
+    padding: 4rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-top: 5px solid var(--cyan);
+    text-align: left;
+}
+.legal-card h2 {
+    color: var(--white) !important;
+    font-size: 1.75rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.25rem;
+}
+.legal-card h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 100%;
+    background: var(--red);
+    border-radius: 2px;
+}
+.legal-card h2:first-child {
+    margin-top: 0;
+}
+.legal-card p {
+    color: var(--light-gray);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.legal-card p:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .legal-card {
+        padding: 2rem 1.5rem;
+    }
+    .legal-card h2 {
+        font-size: 1.5rem;
+    }
+}
 
 /* ===========================================================
    AREA DIRECTORY LIST (SERVICE AREAS)
