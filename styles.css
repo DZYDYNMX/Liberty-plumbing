@@ -993,6 +993,8 @@ a:focus-visible, button:focus-visible {
     cursor: grab;
     position: relative;
     padding: 1rem 0;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 .marquee-container:active {
     cursor: grabbing;
@@ -1412,5 +1414,54 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 600px) {
     .area-directory {
         column-count: 1;
+    }
+}
+
+/* ===========================================================
+   IMAGE MARQUEE (GALLERY)
+   =========================================================== */
+.image-marquee-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.image-marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 1.5rem;
+}
+
+.image-marquee-track:hover {
+}
+
+.image-marquee-item {
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.image-marquee-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: brightness(0.85);
+}
+
+.image-marquee-item:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .image-marquee-item {
+        width: 240px;
     }
 }
