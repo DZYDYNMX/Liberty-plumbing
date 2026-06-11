@@ -781,10 +781,11 @@ a.btn[href*="maps.app.goo.gl"]:hover {
     transition: max-height 0.4s ease-out, padding 0.4s ease-out;
     padding: 0 1.5rem;
     color: var(--light-gray);
+    background: var(--navy-dark);
 }
 .accordion-item.active .accordion-content {
     max-height: 500px;
-    padding: 0 1.5rem 1.25rem;
+    padding: 1rem 1.5rem 1.25rem;
 }
 .accordion-icon {
     transition: transform 0.4s ease;
@@ -1039,6 +1040,7 @@ a:focus-visible, button:focus-visible {
     transition: all 0.3s ease;
     user-select: none;
     -webkit-user-drag: none;
+    pointer-events: none;
 }
 .marquee-container.is-dragging .marquee-item {
     pointer-events: none;
