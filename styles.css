@@ -432,16 +432,7 @@ img {
     color: var(--white) !important;
 }
 
-/* Specific rule for Google Review button */
-a.btn[href*="maps.app.goo.gl"] {
-    background: transparent !important;
-    border-color: var(--cyan) !important;
-    color: var(--cyan) !important;
-}
-a.btn[href*="maps.app.goo.gl"]:hover {
-    background: var(--cyan) !important;
-    color: var(--navy-dark) !important;
-}
+
 .btn-outline-cyan {
     background: transparent;
     color: var(--white);
