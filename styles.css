@@ -679,6 +679,22 @@ a.btn[href*="maps.app.goo.gl"]:hover {
     font-size: 1.05rem;
     margin-bottom: 1rem;
 }
+.reviews-intro .btn-group {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+}
+.reviews-intro .btn-group .btn {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+.reviews-intro .btn-group > .hide-on-mobile {
+    grid-column: 1 / -1;
+    margin-top: 0 !important;
+}
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

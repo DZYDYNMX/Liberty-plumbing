@@ -1,36 +1,29 @@
 import os
 from PIL import Image
 
-ASSETS_DIR = 'assets'
+targets = [
+    'assets/service-emergency.webp',
+    'assets/hero-plumber.webp'
+]
 
-def optimize_images():
-    for filename in os.listdir(ASSETS_DIR):
-        if filename.endswith('.png') or filename.endswith('.jpg') or filename.endswith('.jpeg'):
-            filepath = os.path.join(ASSETS_DIR, filename)
-            webp_filepath = os.path.join(ASSETS_DIR, os.path.splitext(filename)[0] + '.webp')
-            
-            try:
-                with Image.open(filepath) as img:
-                    # Convert to RGB if necessary
-                    if img.mode in ('RGBA', 'LA') or (img.mode == 'P' and 'transparency' in img.info):
-                        bg = Image.new('RGB', img.size, (255, 255, 255))
-                        if img.mode == 'RGBA':
-                            bg.paste(img, mask=img.split()[3])
-                        else:
-                            bg.paste(img)
-                        img = bg
-                    elif img.mode != 'RGB':
-                        img = img.convert('RGB')
-                        
-                    # Resize if too large
-                    max_size = (800, 800)
-                    img.thumbnail(max_size, Image.Resampling.LANCZOS)
-                    
-                    # Save as WebP
-                    img.save(webp_filepath, 'WEBP', quality=85, method=6)
-                    print(f"Optimized: {filename} -> {os.path.basename(webp_filepath)}")
-            except Exception as e:
-                print(f"Error processing {filename}: {e}")
+gallery_dir = 'assets/gallery'
+if os.path.exists(gallery_dir):
+    for f in os.listdir(gallery_dir):
+        if f.endswith('.webp'):
+            targets.append(os.path.join(gallery_dir, f))
 
-if __name__ == '__main__':
-    optimize_images()
+for filepath in targets:
+    if os.path.exists(filepath):
+        try:
+            with Image.open(filepath) as img:
+                # Resize if larger than 600px width/height
+                max_dim = 600
+                if img.width > max_dim or img.height > max_dim:
+                    img.thumbnail((max_dim, max_dim), Image.Resampling.LANCZOS)
+                
+                # Save with compression
+                img.save(filepath, 'WEBP', quality=75, method=6)
+                print(f"Optimized {filepath}")
+        except Exception as e:
+            print(f"Failed to optimize {filepath}: {e}")
+
