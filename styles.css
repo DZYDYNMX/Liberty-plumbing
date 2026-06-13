@@ -1697,3 +1697,15 @@ footer::before {
     background: linear-gradient(to bottom, var(--navy-dark) 0%, transparent 100%);
     pointer-events: none; z-index: 0;
 }
+
+@media (max-width: 768px) {
+    /* Truncate descriptions and maximize space */
+    .hero-text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .features-grid { gap: 1rem !important; }
+    .premium-card { padding: 1.25rem 1rem !important; margin-bottom: 0 !important; }
+}
