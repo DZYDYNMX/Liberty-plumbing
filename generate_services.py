@@ -279,7 +279,7 @@ TEMPLATE = """<!DOCTYPE html>
     <meta property="og:description" content="{desc}">
     <meta property="og:image" content="https://libertyplumbing.com/{image}">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css?v=15">
+    <link rel="stylesheet" href="styles.css?v=37">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -464,7 +464,7 @@ TEMPLATE = """<!DOCTYPE html>
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=37"></script>
 </body>
 </html>"""
 

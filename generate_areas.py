@@ -104,7 +104,7 @@ html_template = """<!DOCTYPE html>
     <meta property="og:description" content="{desc}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://liberty-plumbing-example.com/area-{city_slug}.html">
-    <link rel="stylesheet" href="styles.css?v=13">
+    <link rel="stylesheet" href="styles.css?v=37">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -315,7 +315,7 @@ html_template = """<!DOCTYPE html>
         </div>
     </div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=37"></script>
 </body>
 </html>"""
 

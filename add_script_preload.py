@@ -13,7 +13,7 @@ for filepath in glob.glob("*.html"):
     # 2. Add to head
     head_close_idx = html.find('</head>')
     if head_close_idx != -1 and 'script.js' not in html:
-        insert_script = '    <script src="script.js?v=33" defer></script>\n'
+        insert_script = '    <script src="script.js?v=37" defer></script>\n'
         html = html[:head_close_idx] + insert_script + html[head_close_idx:]
 
     # Add preload for hero images
