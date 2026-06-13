@@ -140,7 +140,7 @@ html_template = """<!DOCTYPE html>
                     </div>
                 </li>
                 <li><a href="gallery.html">Our Work</a></li>
-                <li><a href="areas.html">Service Areas</a></li>
+                <li><a href="areas.html" class="active">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
@@ -154,7 +154,15 @@ html_template = """<!DOCTYPE html>
                 <div class="hero-text">
                     <h1>Expert Plumbing in {city}, TX</h1>
                     <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 2rem; line-height: 1.6;">{desc}</p>
-                    <button class="btn btn-cyan hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
+                    
+                    <button class="btn btn-outline hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
+                    
+                    <div class="marquee-container" style="margin-top: 2rem;">
+                        <div class="marquee-track">
+                            {marquee_html}
+                            {marquee_html}
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-form hide-on-mobile">
                     <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Book Online Now</h2>
@@ -189,19 +197,12 @@ html_template = """<!DOCTYPE html>
 
         <section class="section section-mid">
             <div class="container fade-in">
-                <div class="about-split" style="background: var(--navy-dark);">
-                    <div class="about-text">
+                <div class="container fade-in" style="padding-top: 2rem;">
+                    <div class="text-center" style="margin-bottom: 2rem;">
                         <div class="label">Coverage Area</div>
-                        <h2>Neighborhoods We Serve in {city}</h2>
-                        <ul class="mobile-collapse" data-collapse-limit="4" style="color:var(--light-gray); font-size: 1.05rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.75rem 1.5rem; padding-left: 1.25rem; margin-top: 1.5rem; margin-bottom: 2rem;">
-                            {neighborhoods_html}
-                        </ul>
-                        <div class="btn-group">
-                            <a href="tel:+19367552836" class="btn btn-cyan">(936) 755-2836</a>
-                            <button class="btn btn-outline contact-btn">Request Service in {city}</button>
-                        </div>
+                        <h2>Proudly Serving {city}</h2>
                     </div>
-                    <div class="about-image">
+                    <div class="map-container" style="border-radius: var(--radius-lg); overflow: hidden; height: 500px; border: 1px solid var(--border-color);">
                         <iframe
                             src="https://www.google.com/maps?q={city},+TX&output=embed"
                             width="100%"
@@ -213,7 +214,6 @@ html_template = """<!DOCTYPE html>
                             title="Plumber in {city} TX Map">
                         </iframe>
                     </div>
-                </div>
             </div>
         </section>
 
@@ -312,14 +312,17 @@ for city, data in cities_data.items():
     filename = f"area-{city_slug}.html"
     
     neighborhoods_html = ""
+    marquee_html = ""
     for nh in data['neighborhoods']:
         neighborhoods_html += f"<li>{nh}</li>\n                            "
+        marquee_html += f'<div class="marquee-item">{nh}</div>'
         
     content = html_template.format(
         city=city,
         city_slug=city_slug,
         desc=data['desc'],
-        neighborhoods_html=neighborhoods_html.strip()
+        neighborhoods_html=neighborhoods_html.strip(),
+        marquee_html=marquee_html
     )
     
     with open(filename, "w") as f:

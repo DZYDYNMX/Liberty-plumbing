@@ -204,7 +204,7 @@ SERVICES = [
         "title": "Water Heaters",
         "desc": "Never run out of hot water again. We repair all models and install high-efficiency tankless and traditional tank water heaters tailored to your family's specific hot water demands.",
         "image": "assets/service-waterheater.webp",
-        "seo_intro": "A functioning water heater is vital for your home’s comfort and sanitation. When your heater fails, you need a plumbing team that responds instantly. Liberty Plumbing is the premier choice for diagnosing, repairing, and installing both traditional tank heaters and modern tankless systems. We assess your household's daily hot water usage to recommend the perfect, energy-efficient unit. Don't suffer through freezing showers—rely on our master plumbers to restore your hot water safely and swiftly.",
+        "seo_intro": "A functioning water heater is vital for your home’s comfort and sanitation. When your heater fails, you need a plumbing team that responds instantly. Liberty Plumbing is the premier choice for diagnosing, repairing, and installing both traditional tank heaters and modern tankless systems. We assess your household's daily hot water usage to recommend the perfect, energy-efficient unit. Don't suffer through freezing showers-rely on our master plumbers to restore your hot water safely and swiftly.",
         "problems_title": "SIGNS YOUR WATER HEATER IS FAILING",
         "problems_intro": "Water heaters operate under immense pressure and heat, meaning they degrade over time. If your heater is over 10 years old, it is nearing the end of its lifespan. Watch for these clear signs that your system is failing:",
         "problems": [

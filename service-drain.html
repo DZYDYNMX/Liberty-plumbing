@@ -10,13 +10,11 @@
     <meta property="og:description" content="Professional drain cleaning services using advanced high-pressure water jetting to clear stubborn blockages and restore optimal flow. We safely remove hair, grease, and debris build-up without damaging your pipes.">
     <meta property="og:image" content="https://libertyplumbing.com/assets/service-drain.webp">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css?v=34">
+    <link rel="stylesheet" href="styles.css?v=15">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800;900&display=swap"></noscript>
-    <link rel="preload" as="image" href="assets/hero-plumber.webp" fetchpriority="high">
-    <script src="script.js?v=33" defer></script>
 </head>
 <body>
     <header class="navbar">
@@ -30,7 +28,6 @@
                 <li class="nav-services-list">
                     <a href="services.html" class="active">Services <span class="desktop-only-arrow">▾</span></a>
                     <div class="dropdown-menu">
-                        <a href="services.html">View All Services</a>
                         <a href="service-drain.html">Drain Cleaning</a>
                         <a href="service-tap.html">Tap Repair</a>
                         <a href="service-disposal.html">Waste Disposal</a>
@@ -43,25 +40,12 @@
                         <a href="service-waterheater.html">Water Heaters</a>
                         <a href="service-construction.html">New Construction</a>
                         <a href="service-emergency.html">Emergency Repairs</a>
-                        
                     </div>
                 </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                                <li>
-                    <a href="areas.html">Service Areas <span class="desktop-only-arrow">▾</span></a>
-                    <div class="dropdown-menu">
-                        <a href="areas.html">View All Areas</a>
-                        <a href="area-houston.html">Houston</a>
-                        <a href="area-katy.html">Katy</a>
-                        <a href="area-sugar-land.html">Sugar Land</a>
-                        <a href="area-spring.html">Spring</a>
-                        <a href="area-cypress.html">Cypress</a>
-                        <a href="area-galveston.html">Galveston</a>
-                        
-                    </div>
-                </li>
+                <li><a href="gallery.html">Our Work</a></li>
+                <li><a href="areas.html">Service Areas</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -81,9 +65,9 @@
                     <p class="form-sub" style="margin-bottom: 1.5rem;">Simply complete the form below & we'll get back to you as soon as possible</p>
                     <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
                         <div class="form-grid">
-                            <input type="text" aria-label="Name" placeholder="Name" required>
-                            <input type="tel" aria-label="Phone Number" placeholder="Phone Number" required>
-                            <input type="email" aria-label="Email Address" placeholder="Email Address">
+                            <input type="text" placeholder="Name" required>
+                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="email" placeholder="Email Address">
                             <select class="full-width" aria-label="Select a service" required>
                                 <option value="" disabled>Service Required</option>
                                 <option value="drain" selected>Drain Cleaning</option>
@@ -118,19 +102,19 @@
                 <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
                     
                     <div class="premium-card">
-                        <h3>Slow Drainage</h3>
+                        <h3>SLOW DRAINAGE</h3>
                         <p>If water is pooling around your feet in the shower or your sinks take forever to empty, a deep blockage is forming.</p>
                     </div>
                     <div class="premium-card">
-                        <h3>Foul Odors</h3>
+                        <h3>FOUL ODORS</h3>
                         <p>Persistent bad smells coming from your drains usually indicate rotting food or sewage trapped in the lines.</p>
                     </div>
                     <div class="premium-card">
-                        <h3>Gurgling Sounds</h3>
+                        <h3>GURGLING SOUNDS</h3>
                         <p>If you hear bubbling or gurgling when you flush the toilet or use the sink, it means air is trapped due to a severe clog.</p>
                     </div>
                     <div class="premium-card">
-                        <h3>Frequent Clogs</h3>
+                        <h3>FREQUENT CLOGS</h3>
                         <p>If you find yourself plunging the same toilet multiple times a week, there is an underlying issue in the main line.</p>
                     </div>
                 </div>
@@ -244,9 +228,9 @@
             <h2>Request Service</h2>
             <p style="color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem;">Fill out the form below or call us directly at <a href="tel:+19367552836" class="text-cyan">(936) 755-2836</a>.</p>
             <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!'); this.closest('.modal-overlay').classList.remove('active'); document.body.classList.remove('no-scroll');">
-                <input type="text" aria-label="Full Name" placeholder="Full Name" required>
-                <input type="tel" aria-label="Phone Number" placeholder="Phone Number" required>
-                <input type="email" aria-label="Email Address" placeholder="Email Address">
+                <input type="text" placeholder="Full Name" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address">
                 <select id="modal-service" aria-label="Select a service" required>
                                 <option value="" disabled>Service Required</option>
                                 <option value="drain" selected>Drain Cleaning</option>
@@ -263,11 +247,12 @@
                                 <option value="emergency">Emergency Repairs</option>
                                 <option value="other">Other / General Inquiry</option>
                 </select>
-                <textarea aria-label="Tell us about the issue..." placeholder="Tell us about the issue..." rows="4" required></textarea>
+                <textarea placeholder="Tell us about the issue..." rows="4" required></textarea>
                 <button type="submit" class="btn btn-cyan" style="width:100%; border:none; margin-top:0.5rem;">Submit Request</button>
             </form>
         </div>
     </div>
 
-    </body>
+    <script src="script.js?v=3"></script>
+</body>
 </html>
