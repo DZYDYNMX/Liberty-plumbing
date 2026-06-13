@@ -140,9 +140,21 @@ html_template = """<!DOCTYPE html>
                     </div>
                 </li>
                 <li><a href="gallery.html">Our Work</a></li>
-                <li><a href="areas.html" class="active">Service Areas</a></li>
+                                <li class="nav-services-list">
+                    <a href="areas.html" class="active">Service Areas <span class="desktop-only-arrow">▾</span></a>
+                    <div class="dropdown-menu">
+                        <a href="areas.html">View All Areas</a>
+                        <a href="area-houston.html">Houston</a>
+                        <a href="area-katy.html">Katy</a>
+                        <a href="area-sugar-land.html">Sugar Land</a>
+                        <a href="area-cypress.html">Cypress</a>
+                        <a href="area-spring.html">Spring</a>
+                        <a href="area-bellaire.html">Bellaire</a>
+                        <a href="area-richmond.html">Richmond</a>
+                    </div>
+                </li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--cyan); font-weight: 600;">(936) 755-2836</a></li>
+                <li><a href="tel:+19367552836" class="nav-phone-inline" style="color: var(--red); font-weight: 600;">(936) 755-2836</a></li>
                 <li><button class="nav-cta-btn contact-btn">Get a Quote</button></li>
             </ul>
         </div>
@@ -157,8 +169,8 @@ html_template = """<!DOCTYPE html>
                     
                     <button class="btn btn-outline hide-on-desktop contact-btn" style="width: 100%; max-width: 400px; padding: 1rem; font-size: 1.15rem; font-weight: 600; margin-top: 1rem;">Get My Free Quote</button>
                     
-                    <div class="marquee-container" style="margin-top: 2rem;">
-                        <div class="marquee-track">
+                    <div class="hero-marquee-container" style="margin-top: 2rem;">
+                        <div class="hero-marquee-track">
                             {marquee_html}
                             {marquee_html}
                         </div>
@@ -195,7 +207,7 @@ html_template = """<!DOCTYPE html>
             </div>
         </section>
 
-        <section class="section section-mid">
+        <section class="section section-mid" style="background-color: var(--navy-dark);">
             <div class="container fade-in">
                 <div class="container fade-in" style="padding-top: 2rem;">
                     <div class="text-center" style="margin-bottom: 2rem;">
@@ -315,7 +327,7 @@ for city, data in cities_data.items():
     marquee_html = ""
     for nh in data['neighborhoods']:
         neighborhoods_html += f"<li>{nh}</li>\n                            "
-        marquee_html += f'<div class="marquee-item">{nh}</div>'
+        marquee_html += f'<div class="hero-marquee-item">{nh}</div>'
         
     content = html_template.format(
         city=city,
