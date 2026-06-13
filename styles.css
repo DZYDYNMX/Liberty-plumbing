@@ -1651,6 +1651,10 @@ a:focus-visible, button:focus-visible {
     justify-content: center;
     height: 40px;
 }
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
 
 .hero-text {
     min-width: 0;
