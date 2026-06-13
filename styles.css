@@ -320,6 +320,7 @@ img {
    =========================================================== */
 .section {
     padding: 5rem 5%;
+    position: relative;
 }
 .section-mid { background: var(--navy-mid); }
 .section-dark { background: var(--navy-dark); }
@@ -1668,4 +1669,31 @@ a:focus-visible, button:focus-visible {
     background-position: right 1rem center;
     background-size: 0.8rem auto;
     padding-right: 2.5rem;
+}
+
+/* Gradients for sections */
+.navbar::after {
+    content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 100px;
+    background: linear-gradient(to bottom, var(--navy-dark) 0%, transparent 100%);
+    pointer-events: none; z-index: -1;
+}
+.hero::after {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 150px;
+    background: linear-gradient(to top, var(--navy-dark) 0%, transparent 100%);
+    pointer-events: none; z-index: 0;
+}
+.section::before, .section::after {
+    content: ''; position: absolute; left: 0; right: 0; height: 150px;
+    pointer-events: none; z-index: 0;
+}
+.section-mid::before {
+    top: 0; background: linear-gradient(to bottom, var(--navy-dark) 0%, transparent 100%);
+}
+.section-mid::after {
+    bottom: 0; background: linear-gradient(to top, var(--navy-dark) 0%, transparent 100%);
+}
+footer::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 150px;
+    background: linear-gradient(to bottom, var(--navy-dark) 0%, transparent 100%);
+    pointer-events: none; z-index: 0;
 }
